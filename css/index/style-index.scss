@@ -42,8 +42,13 @@ html[data-theme='dark'] {
   ::-webkit-scrollbar-thumb {
     background: var(--scroll);
     border-radius: 1rem;
+    border-radius: 2rem 2rem 2rem 2rem;
   }
 
+
+body{
+  width: 99%;
+}
 
 @import 'layout/loader.scss';
 @import 'layout/header.scss';
