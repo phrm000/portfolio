@@ -1,12 +1,15 @@
 .about-me{
+    p,h2{
+        color: var(--font);
+    }
     margin: 0 auto;
     max-width: 89%;
     padding: 5% 2%;
-    background-color: #FDFDFD;
-    box-shadow: 1rem 1.5rem   #E6E6E6;
-    -moz-box-shadow: 1rem 1.5rem   #E6E6E6;
-    -webkit-box-shadow: 1rem 1.5rem   #E6E6E6;
-    -o-box-shadow: 1rem 1.5rem   #E6E6E6;
+    background-color: var(--bg-all);
+    box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -moz-box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -webkit-box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -o-box-shadow: 1rem 1.5rem   var(--box-shadow);
     border-radius:2rem;
 }
 

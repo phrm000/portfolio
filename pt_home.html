@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="htmlFile">
 
     <head>
         <meta charset="UTF-8">
@@ -42,6 +42,15 @@
                 <a href="pt_home.html"><img src="img/logoPedro.svg" class="logo-pedro"></a>
 
                 <div class="linguagem" >
+
+                    <div class="container">
+                        <label class="switch" for="checkbox">
+                          <input type="checkbox" id="checkbox" name="theme"/>
+                          <div class="slider round"></div>
+                        </label>
+                        <img src="img/modoNoturno.svg">
+                      </div>
+
                     <a href="##" style="text-decoration: none;">
                         <span >Change to English</span>
                         <img src="img/euaFlag.svg">
@@ -155,28 +164,28 @@
                 <div class="contato-grid">
 
                     <div>
-                        <img src="img/emailIcon.svg">
+                        <img src="img/emailIcon.svg" id="emailIcon">
                         <h3>Email</h3>
                         <p>phrm000@gmail.com</p>
                         <button type="button" class="emailCopy"> Clique para copiar</button>
                     </div>
 
                     <div>
-                        <img src="img/phoneIcon.svg">
+                        <img src="img/phoneIcon.svg" id="phoneIcon">
                         <h3>Celular</h3>
                         <p>(41) 9 9711-6321</p>
                         <button type="button" class="celCopy"> Clique para copiar</button>
                     </div>
 
                     <div>
-                        <img src="img/linkedinIcon.svg">
+                        <img src="img/linkedinIcon.svg" id="linkedinIcon">
                         <h3>Linkedin</h3>
                         <p>/in/pedromoraisdesign/</p>
                         <a href="https://www.linkedin.com/in/pedromoraisdesign/"><button type="button" class="emailCopy">Clique para Acessar</button></a>
                     </div>
 
                     <div>
-                        <img src="img/gitIcon.svg">
+                        <img src="img/gitIcon.svg" id="gitIcon">
                         <h3>Github</h3>
                         <p>/phrm000</p>
                         <a href="https://github.com/phrm000"><button type="button">Clique para Acessar</button></a>
@@ -194,12 +203,12 @@
                 <img src="img/brFlag.svg" class="bandeiras">
                 <div class="curriculo-download">
                     <div>
-                        <img src="img/cvPT.svg">
+                        <img src="img/cvPT.svg" id="C1">
                         <h3>Curriculo Vitae</h3>
                     </div>
 
                     <div>
-                        <img src="img/cgPT.svg">
+                        <img src="img/cgPT.svg" id="C2">
                         <h3>Curriculo Gráfico</h3>
                     </div>
                 </div>
@@ -211,12 +220,12 @@
                     <img src="img/euaFlag.svg" class="bandeiras">
                     <div class="curriculo-download">
                         <div>
-                            <img src="img/cvEN.svg">
+                            <img src="img/cvEN.svg" id="C3">
                             <h3>Curriculo Vitae</h3>
                         </div>
 
                         <div>
-                            <img src="img/grEN.svg">
+                            <img src="img/grEN.svg" id="C4"> 
                             <h3>Curriculo Gráfico</h3>
                         </div>
                     </div>
@@ -231,8 +240,8 @@
         
     </body>
 </html>
+<script src="js/dark-mode.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
 <script src="js/loader.js"></script>
 <script src="js/copy-snack.js"></script>

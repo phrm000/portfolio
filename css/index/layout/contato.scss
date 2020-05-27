@@ -1,4 +1,5 @@
 .contato{
+    color: var(--font);
     width: 95%;
     margin: 0 2.5%;
 }
@@ -19,6 +20,7 @@
 }
 
 .contato-grid div{
+    color: var(--font);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -32,6 +34,7 @@
 }
 
 .contato-grid h3{
+    
     font-family: $titulo;
     font-size: 2em;
     margin-bottom: 0.5rem;
@@ -45,10 +48,6 @@
 
 .contato-grid button{
     margin-bottom: 2rem;
-    box-shadow:  0.0 0.45rem   #E6E6E6;
-    -moz-box-shadow: 0.0 0.45rem   #E6E6E6;
-    -webkit-box-shadow:0.0 0.45rem   #E6E6E6;
-    -o-box-shadow: 0.0 0.45rem   #E6E6E6;
     padding: 1rem 1.3rem;
     background-color: $roxo;
     border-radius: 1rem;
@@ -60,8 +59,5 @@
 .contato-grid button:hover{
     position: relative;
     top: 0.2rem;
-    box-shadow:  0.0 0.0   #E6E6E6;
-    -moz-box-shadow: 0.0 0.0   #E6E6E6;
-    -webkit-box-shadow:0.0 0.0   #E6E6E6;
-    -o-box-shadow: 0.0 0.0   #E6E6E6;
+
 }

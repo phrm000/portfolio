@@ -6,20 +6,102 @@ body{
 .background-yellow{
     margin: 0 auto;
     max-width: 95%;
-    background-color: $amarelo;
-    box-shadow: 1rem 1.5rem   #E6E6E6;
-    -moz-box-shadow: 1rem 1.5rem   #E6E6E6;
-    -webkit-box-shadow: 1rem 1.5rem   #E6E6E6;
-    -o-box-shadow: 1rem 1.5rem   #E6E6E6;
-    border-radius:2rem;
+    background-color: var(--bg-title);
+    box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -moz-box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -webkit-box-shadow: 1rem 1.5rem   var(--box-shadow);
+    -o-box-shadow: 1rem 1.5rem   var(--box-shadow);
+    border-radius: 0 0 2rem 2rem;
 }
 
+
 header{
-    padding: 3%;
+    padding: 2%;
     padding-bottom: 0;
     display: flex;
     justify-content: space-between ;
+    align-items: end;
 }   
+
+.linguagem{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 34%;
+    justify-content: space-around;
+}
+
+.switch {
+    display: inline-block;
+    height: 2rem;
+    position: relative;
+    width: 3.8rem;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider {
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: white;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 0.1rem;
+    content: "";
+    height: 1.65rem;
+    width: 1.65rem;
+    left: 0.3rem;
+    position: absolute;
+    transition: .4s;
+
+  }
+  
+  input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+
+  }
+  
+  input:checked + .slider {
+    border-style: solid;
+    border-width: 0.05rem;
+    border-color: white;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.55rem);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .container img{
+    width: 2rem;
+  }
 
 .linguagem a{
     transition: 0.3s;
@@ -34,7 +116,7 @@ header{
     color: $preto;
 }
 
-.linguagem img{
+.linguagem a img{
     transition: 0.3s;
     width: 3rem;
 }
@@ -43,7 +125,7 @@ header{
     transition: 0.3s;
     font-size: 1.0em;
     img{
-        width: 3.4rem;
+        transform: scale(1.2);
     }
 }
 .logo-pedro{
@@ -171,4 +253,13 @@ header{
 .dots-transitions {
     width: 2.1rem;
     margin: 3% 48.7%;
+}
+
+
+html.transition,
+html.transition, *,
+html.transition, *:before,
+html.transition, *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }

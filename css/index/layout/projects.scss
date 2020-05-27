@@ -8,6 +8,7 @@
     font-size: 3rem;
     font-family: $subtitle;
     text-transform: uppercase;
+    color: var(--font);
     
 }
 
@@ -38,11 +39,12 @@ li{
 li img{
     width:10rem;
     margin-bottom: 2rem;
+    
 }
 
 li h3{
     font-family: $texto;
-    color: $preto;
+    color: var(--font);
     font-size: 1em;
     
 }
