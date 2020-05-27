@@ -1,0 +1,174 @@
+body{
+    font-size: 20px;
+}
+
+
+.background-yellow{
+    margin: 0 auto;
+    max-width: 95%;
+    background-color: $amarelo;
+    box-shadow: 1rem 1.5rem   #E6E6E6;
+    -moz-box-shadow: 1rem 1.5rem   #E6E6E6;
+    -webkit-box-shadow: 1rem 1.5rem   #E6E6E6;
+    -o-box-shadow: 1rem 1.5rem   #E6E6E6;
+    border-radius:2rem;
+}
+
+header{
+    padding: 3%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between ;
+}   
+
+.linguagem a{
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linguagem a span{
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    font-family: $texto;
+    color: $preto;
+}
+
+.linguagem img{
+    transition: 0.3s;
+    width: 3rem;
+}
+
+.linguagem a:hover{
+    transition: 0.3s;
+    font-size: 1.0em;
+    img{
+        width: 3.4rem;
+    }
+}
+.logo-pedro{
+
+    width: 5.5rem;
+    transition: ease-in-out 1.3s;
+    margin-bottom: 2rem;
+}
+
+.logo-pedro:hover{
+    transform: rotate(-765deg);
+    transition: ease-in-out 1.3s;
+
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 95%;
+    padding-bottom: 2%;
+    align-items: end;
+
+}
+.title-text{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: center;
+}
+
+.background-yellow h1{
+    font-family: $titulo;
+    color: white;
+    font-size: 7em;
+}
+
+
+.background-yellow h2{
+    font-family: $titulo;
+    color: $preto;
+    font-size: 1.9em;
+    padding-bottom: 1rem;
+}
+
+
+.info-title-text{
+    
+    display: flex;
+    vertical-align: initial;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.info-title-text p{
+    padding-bottom: 0.2rem;
+    font-family: $titulo;
+    color: $preto;
+    font-size: 1.5em;
+
+}
+
+.info-title-text img{
+    cursor: pointer;
+    width: 1em;
+    transition: 0.4s;
+}
+
+.info-title-text img:hover{
+    transition: 0.4s;
+    width: 1.15em;
+}
+
+.snackbar{
+    margin: 0 36%;
+    color: white;
+    font-family: $titulo;
+    width: 20%;
+    padding: 1% 4%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: $roxo;
+    border-radius:1.2rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 2rem; 
+}
+.snackbar-hidden{
+    visibility: hidden;
+    
+}
+
+.snackbar-show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 2rem; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 2rem; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 2rem; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 2rem; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+.title-img{
+    width: 19rem;
+
+}
+
+.dots-transitions {
+    width: 2.1rem;
+    margin: 3% 48.7%;
+}

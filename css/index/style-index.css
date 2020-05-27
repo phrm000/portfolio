@@ -1,0 +1,464 @@
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #1E0540;
+  align-items: center;
+  justify-content: center;
+}
+.se-pre-con img {
+  width: 10rem;
+  animation-name: rotacao;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -5s;
+}
+
+@keyframes rotacao {
+  0% {
+    width: 10rem;
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0deg);
+    width: 12rem;
+  }
+  50% {
+    width: 10rem;
+    transform: rotate(-405deg);
+  }
+  75% {
+    transform: rotate(-405deg);
+    width: 12rem;
+  }
+}
+.loaded-img {
+  transform: rotate(0deg);
+  width: 22rem;
+}
+
+body {
+  font-size: 20px;
+}
+
+.background-yellow {
+  margin: 0 auto;
+  max-width: 95%;
+  background-color: #F7C600;
+  box-shadow: 1rem 1.5rem   #E6E6E6;
+  -moz-box-shadow: 1rem 1.5rem   #E6E6E6;
+  -webkit-box-shadow: 1rem 1.5rem   #E6E6E6;
+  -o-box-shadow: 1rem 1.5rem   #E6E6E6;
+  border-radius: 2rem;
+}
+
+header {
+  padding: 3%;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.linguagem a {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linguagem a span {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #1A1A1A;
+}
+
+.linguagem img {
+  transition: 0.3s;
+  width: 3rem;
+}
+
+.linguagem a:hover {
+  transition: 0.3s;
+  font-size: 1.0em;
+}
+.linguagem a:hover img {
+  width: 3.4rem;
+}
+
+.logo-pedro {
+  width: 5.5rem;
+  transition: ease-in-out 1.3s;
+  margin-bottom: 2rem;
+}
+
+.logo-pedro:hover {
+  transform: rotate(-765deg);
+  transition: ease-in-out 1.3s;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+  padding-bottom: 2%;
+  align-items: end;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+}
+
+.background-yellow h1 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+  font-size: 7em;
+}
+
+.background-yellow h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #1A1A1A;
+  font-size: 1.9em;
+  padding-bottom: 1rem;
+}
+
+.info-title-text {
+  display: flex;
+  vertical-align: initial;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.info-title-text p {
+  padding-bottom: 0.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #1A1A1A;
+  font-size: 1.5em;
+}
+
+.info-title-text img {
+  cursor: pointer;
+  width: 1em;
+  transition: 0.4s;
+}
+
+.info-title-text img:hover {
+  transition: 0.4s;
+  width: 1.15em;
+}
+
+.snackbar {
+  margin: 0 36%;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  width: 20%;
+  padding: 1% 4%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #1E0540;
+  border-radius: 1.2rem;
+  position: fixed;
+  z-index: 1;
+  bottom: 2rem;
+}
+
+.snackbar-hidden {
+  visibility: hidden;
+}
+
+.snackbar-show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2rem;
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 2rem;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 2rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 2rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+.title-img {
+  width: 19rem;
+}
+
+.dots-transitions {
+  width: 2.1rem;
+  margin: 3% 48.7%;
+}
+
+.about-me {
+  margin: 0 auto;
+  max-width: 89%;
+  padding: 5% 2%;
+  background-color: #FDFDFD;
+  box-shadow: 1rem 1.5rem   #E6E6E6;
+  -moz-box-shadow: 1rem 1.5rem   #E6E6E6;
+  -webkit-box-shadow: 1rem 1.5rem   #E6E6E6;
+  -o-box-shadow: 1rem 1.5rem   #E6E6E6;
+  border-radius: 2rem;
+}
+
+.about-me h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+}
+
+.about-me-text-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-me-text {
+  width: 50%;
+}
+
+.about-me p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.about-me-img {
+  width: 40%;
+}
+
+b {
+  color: #FF9C01;
+}
+
+.projects {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.projects h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  cursor: pointer;
+  width: 14rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding: 2%;
+  border-color: #ccc;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 2%;
+  transition: ease-in-out 300ms;
+}
+
+li img {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+li h3 {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #1A1A1A;
+  font-size: 1em;
+}
+
+li:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 300ms;
+}
+
+.contato {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+.contato h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+}
+
+.contato-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contato-grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contato-grid img {
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.contato-grid h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0.5rem;
+}
+
+.contato-grid p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.0em;
+  margin-bottom: 0.5rem;
+}
+
+.contato-grid button {
+  margin-bottom: 2rem;
+  box-shadow: 0.0 0.45rem   #E6E6E6;
+  -moz-box-shadow: 0.0 0.45rem   #E6E6E6;
+  -webkit-box-shadow: 0.0 0.45rem   #E6E6E6;
+  -o-box-shadow: 0.0 0.45rem   #E6E6E6;
+  padding: 1rem 1.3rem;
+  background-color: #1E0540;
+  border-radius: 1rem;
+  color: white;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1em;
+}
+
+.contato-grid button:hover {
+  position: relative;
+  top: 0.2rem;
+  box-shadow: 0.0 0.0   #E6E6E6;
+  -moz-box-shadow: 0.0 0.0   #E6E6E6;
+  -webkit-box-shadow: 0.0 0.0   #E6E6E6;
+  -o-box-shadow: 0.0 0.0   #E6E6E6;
+}
+
+.curriculo {
+  width: 95%;
+  margin: 8% 2.5%;
+  margin-top: 6%;
+}
+
+.curriculo h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+}
+
+.curriculo-geral, .curriculo-download {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bandeiras {
+  transform: translateX(-16%);
+  width: 6rem;
+}
+
+.div-curriculo {
+  padding: 2% 1%;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: #ccc;
+  border-radius: 3rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.curriculo-download div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: ease-in-out 300ms;
+  cursor: pointer;
+}
+.curriculo-download div:hover {
+  transform: scale(1.2);
+  transition: ease-in-out 300ms;
+}
+.curriculo-download img {
+  width: 10rem;
+  margin: 0 auto;
+}
+.curriculo-download h3 {
+  font-size: 1.5em;
+  font-family: "Barlow Condensed", sans-serif;
+}

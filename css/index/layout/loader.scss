@@ -1,0 +1,57 @@
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: $roxo;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 10rem;
+    animation-name: rotacao;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-delay: -5s;
+  }
+}
+
+@keyframes rotacao {
+    0%   {
+        width:10rem;
+        transform: rotate(0deg);
+        
+    }
+    25%   {
+        transform: rotate(0deg);
+        width:12rem;
+    }
+
+    50%   {
+        width:10rem;
+        transform: rotate(-405deg);
+    }
+    75%   {
+        transform: rotate(-405deg);
+        width:12rem;
+    }
+
+}
+
+.loaded-img{
+    transform: rotate(0deg);
+    width:22rem;
+
+}
