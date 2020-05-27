@@ -6,7 +6,12 @@ html{
     --box-shadow:$cinza;
     background-color: var(--bg-all);
     --bg-all: white;
-    --font:$preto
+    --font:$preto;
+    --font-negative:$cinza;
+    --bg-snack:$roxo;
+    --box-shadow-snack:$roxo-escuro;
+    --scroll:#ccc
+
 
 }
 
@@ -16,13 +21,36 @@ html[data-theme='dark'] {
     --bg-all: $roxo;
     --box-shadow:$roxo-escuro;
     --font:$cinza;
+    --font-negative:$preto;
+    --bg-snack:$amarelo;
+    --box-shadow-snack:$laranja;
+    --scroll:$laranja
 
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0;
+    border-radius: 0.3rem 0rem 0rem 0.3rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll);
+    border-radius: 1rem;
+  }
+
+
 @import 'layout/loader.scss';
 @import 'layout/header.scss';
 @import 'layout/about.scss';
 @import 'layout/projects.scss';
 @import 'layout/contato.scss';
 @import 'layout/curriculo.scss';
+@import 'layout/media-queries-index.scss';
 
 

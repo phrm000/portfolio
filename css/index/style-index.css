@@ -4,6 +4,10 @@ html {
   background-color: var(--bg-all);
   --bg-all: white;
   --font: #1A1A1A;
+  --font-negative: #E6E6E6;
+  --bg-snack: #1E0540;
+  --box-shadow-snack: #160433;
+  --scroll: #ccc;
 }
 
 html[data-theme='dark'] {
@@ -11,6 +15,26 @@ html[data-theme='dark'] {
   --bg-all: #1E0540;
   --box-shadow: #160433;
   --font: #E6E6E6;
+  --font-negative: #1A1A1A;
+  --bg-snack: #F7C600;
+  --box-shadow-snack: #FF9C01;
+  --scroll: #FF9C01;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll);
+  border-radius: 1rem;
 }
 
 .no-js #loader {
@@ -67,7 +91,7 @@ html[data-theme='dark'] {
   width: 22rem;
 }
 
-body {
+html {
   font-size: 20px;
 }
 
@@ -91,7 +115,7 @@ header {
 }
 
 .linguagem {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -99,9 +123,9 @@ header {
 
 .container {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  width: 34%;
+  flex-direction: row;
+  align-items: baseline;
+  width: 8rem;
   justify-content: space-around;
 }
 
@@ -125,7 +149,7 @@ header {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 0.0rem;
   transition: .4s;
 }
 
@@ -157,7 +181,7 @@ input:checked + .slider:before {
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2rem;
 }
 
 .slider.round:before {
@@ -165,7 +189,7 @@ input:checked + .slider:before {
 }
 
 .container img {
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .linguagem a {
@@ -239,7 +263,7 @@ input:checked + .slider:before {
   display: flex;
   vertical-align: initial;
   justify-content: space-between;
-  width: 60%;
+  width: 62%;
 }
 
 .info-title-text p {
@@ -262,17 +286,22 @@ input:checked + .slider:before {
 
 .snackbar {
   margin: 0 36%;
-  color: white;
+  color: var(--font-negative);
   font-family: "Barlow Condensed", sans-serif;
   width: 20%;
   padding: 1% 4%;
   text-align: center;
   font-size: 1.6em;
-  background-color: #1E0540;
+  background-color: var(--bg-snack);
   border-radius: 1.2rem;
   position: fixed;
   z-index: 1;
   bottom: 2rem;
+  transition: all 0ms;
+  box-shadow: 0.3rem 0.5rem var(--box-shadow-snack);
+  -moz-box-shadow: 0.3rem 0.5rem var(--box-shadow-snack);
+  -webkit-box-shadow: 0.3rem 0.5rem var(--box-shadow-snack);
+  -o-box-shadow: 0.3rem 0.5rem var(--box-shadow-snack);
 }
 
 .snackbar-hidden {
@@ -326,7 +355,7 @@ input:checked + .slider:before {
   }
 }
 .title-img {
-  width: 19rem;
+  width: 29%;
 }
 
 .dots-transitions {
@@ -338,8 +367,8 @@ html.transition,
 html.transition, *,
 html.transition, *:before,
 html.transition, *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+  transition: all 750ms;
+  transition-delay: 0;
 }
 
 .about-me {
@@ -377,7 +406,7 @@ html.transition, *:after {
 
 .about-me p {
   font-size: 1.1em;
-  line-height: 1.1em;
+  line-height: 1.2em;
   font-family: "Merriweather Sans", sans-serif;
 }
 
@@ -417,7 +446,7 @@ li {
   width: 14rem;
   border-style: solid;
   border-width: 0.1rem;
-  padding: 2%;
+  padding: 3%;
   border-color: #ccc;
   border-radius: 3rem;
   display: flex;
@@ -461,9 +490,11 @@ li:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .contato-grid div {
+  margin: 0 1%;
   color: var(--font);
   display: flex;
   flex-direction: column;
@@ -472,7 +503,7 @@ li:hover {
 }
 
 .contato-grid img {
-  width: 10rem;
+  width: 7rem;
   margin-bottom: 1rem;
 }
 
@@ -528,10 +559,11 @@ li:hover {
 .bandeiras {
   transform: translateX(-16%);
   width: 6rem;
+  margin-bottom: 3%;
 }
 
 .div-curriculo {
-  padding: 2% 1%;
+  padding: 4% 1%;
   border-style: solid;
   border-width: 0.2rem;
   border-color: #ccc;
@@ -544,6 +576,7 @@ li:hover {
 }
 
 .curriculo-download div {
+  margin-top: 2%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -552,7 +585,7 @@ li:hover {
   cursor: pointer;
 }
 .curriculo-download div:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: ease-in-out 300ms;
 }
 .curriculo-download img {
@@ -563,4 +596,299 @@ li:hover {
   color: var(--font);
   font-size: 1.5em;
   font-family: "Barlow Condensed", sans-serif;
+}
+
+@media (max-width: 75rem) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 56rem) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 54rem) {
+  .about-me-text-img {
+    flex-direction: column;
+  }
+
+  .about-me-text {
+    width: 95%;
+  }
+
+  .about-me-img {
+    margin-top: 2%;
+    width: 50%;
+  }
+
+  .contato-grid div {
+    margin: 2% auto;
+    width: 40%;
+  }
+
+  .curriculo-geral {
+    flex-direction: column;
+  }
+  .curriculo-geral .div-curriculo {
+    margin: 2% auto;
+    width: 90%;
+  }
+}
+@media (max-width: 48.1rem) {
+  .title, .projects ul {
+    font-size: 14px;
+  }
+
+  .info-title-text img {
+    width: 1.2rem;
+  }
+
+  .linguagem {
+    width: 50%;
+  }
+
+  .dots-transitions {
+    margin-top: 4.5%;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 43.1rem) {
+  .about-me {
+    box-shadow: 0 0 var(--box-shadow);
+    -moz-box-shadow: 0 0 var(--box-shadow);
+    -webkit-box-shadow: 0 0 var(--box-shadow);
+    -o-box-shadow: 0 0 var(--box-shadow);
+  }
+
+  .about-me img {
+    width: 80%;
+  }
+
+  .logo-pedro {
+    width: 4.5rem;
+  }
+
+  .background-yellow h2 {
+    font-size: 2.2em;
+  }
+
+  .title, .projects ul {
+    font-size: 12px;
+  }
+
+  li h3 {
+    font-size: 1.5em;
+  }
+
+  .info-title-text img {
+    width: 1.3rem;
+  }
+
+  .info-title-text p {
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 40rem) {
+  .dots-transitions {
+    margin-top: 6.5%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 38.25rem) {
+  .title {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .title-img {
+    width: 45%;
+  }
+
+  .title-text {
+    align-items: center;
+  }
+
+  .background-yellow h2 {
+    font-size: 1.7em;
+  }
+
+  .dots-transitions {
+    width: 1.2rem;
+  }
+
+  .background-yellow {
+    padding: 0% 2% 2% 2%;
+    margin: 0 auto;
+    max-width: 92%;
+  }
+
+  .background-yellow h1 {
+    font-size: 5em;
+  }
+
+  .info-title-text {
+    width: 80%;
+  }
+
+  .info-title-text p {
+    font-size: 1.6em;
+  }
+
+  .info-title-text img {
+    width: 1rem;
+  }
+
+  .linguagem {
+    width: 70%;
+  }
+
+  .about-me h2, .contato h2, .curriculo h2, .projects h2 {
+    font-size: 2em;
+  }
+
+  li img {
+    width: 7rem;
+  }
+
+  li h3 {
+    font-size: 1.4em;
+  }
+
+  .curriculo-download h3 {
+    font-size: 1.1em;
+  }
+
+  .curriculo-download img {
+    width: 55%;
+  }
+
+  li {
+    width: 10rem;
+  }
+
+  .contato-grid img {
+    width: 6rem;
+  }
+
+  .bandeiras {
+    width: 4rem;
+  }
+
+  .curriculo-download img {
+    width: 70%;
+  }
+
+  .containter {
+    transform: scale(0.9);
+  }
+
+  .contato-grid button {
+    padding: 1rem;
+  }
+}
+@media (max-width: 31rem) {
+  .logo-pedro {
+    width: 4.0rem;
+  }
+
+  .contato-grid div {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  li {
+    padding: 6% 2%;
+    min-width: 38%;
+    margin: 3% 1.5%;
+    text-align: center;
+  }
+
+  li img {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 28rem) {
+  .background-yellow {
+    box-shadow: 0 var(--box-shadow);
+    -moz-box-shadow: 0 var(--box-shadow);
+    -webkit-box-shadow: 0 var(--box-shadow);
+    -o-box-shadow: 0 var(--box-shadow);
+  }
+
+  .about-me p {
+    font-size: 1.0em;
+  }
+
+  .linguagem a span {
+    display: none;
+    text-align: center;
+    width: 60%;
+  }
+
+  .background-yellow h1 {
+    font-size: 4em;
+  }
+
+  .info-title-text {
+    font-size: 11px;
+  }
+
+  .container {
+    transform: scale(0.8);
+  }
+
+  li h3 {
+    font-size: 1.35em;
+  }
+
+  ul {
+    width: 95%;
+  }
+
+  li {
+    padding: 6% 1%;
+    min-width: 38%;
+    margin: 3% 1.5%;
+    text-align: center;
+  }
+  li img {
+    width: 5rem;
+  }
+
+  .contato-grid img {
+    width: 4.6rem;
+  }
+}
+@media (max-width: 22rem) {
+  .curriculo-download {
+    flex-direction: column;
+  }
+
+  .background-yellow h2 {
+    font-size: 1.1rem;
+  }
+
+  .title-text {
+    align-items: center;
+  }
+
+  .background-yellow h2 {
+    font-size: 1.1rem;
+  }
+
+  .linguagem a {
+    flex-direction: column;
+  }
+  .linguagem a span {
+    display: none;
+  }
 }

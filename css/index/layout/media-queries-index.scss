@@ -1,0 +1,291 @@
+@media (max-width:75rem){
+    html{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:62.5rem){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:56rem){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:54rem){
+    .about-me-text-img{
+        flex-direction: column;
+    } 
+    
+
+    .about-me-text {
+        width: 95%;
+    }
+
+    .about-me-img {
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    .contato-grid div{
+        margin:2% auto;
+        width: 40%;
+    }
+    .curriculo-geral{
+        flex-direction: column;
+
+        .div-curriculo{
+            margin:2% auto;
+            width: 90%;
+        }
+
+    }
+}
+
+@media (max-width:48.1rem){
+    .title, .projects ul{
+        font-size: 14px;
+    }
+
+    .info-title-text img {
+        width: 1.2rem;
+    }
+    .linguagem {
+        width: 50%;
+    }
+
+    .dots-transitions {
+        margin-top: 4.5%;
+    }
+    li:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:43.1rem){
+
+    .about-me {
+        box-shadow: 0 0   var(--box-shadow);
+        -moz-box-shadow: 0 0 var(--box-shadow);
+        -webkit-box-shadow: 0 0   var(--box-shadow);
+        -o-box-shadow: 0 0 var(--box-shadow);
+    }
+    .about-me img {
+        width: 80%;
+    }
+
+    .logo-pedro {
+        width: 4.5rem;
+    }
+    .background-yellow h2 {
+        font-size: 2.2em;
+    }
+    .title, .projects ul{
+        font-size: 12px;
+    }
+    li h3 {
+        font-size: 1.5em;
+    }
+    .info-title-text img {
+        width: 1.3rem;
+    }
+
+    .info-title-text p {
+        font-size: 1.6em;
+    }
+
+
+}
+
+@media (max-width:40rem){
+    .dots-transitions {
+        margin-top: 6.5%;
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width:38.25rem){
+    .title{
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+    .title-img {
+        width: 45%;
+    }
+    .title-text {
+        align-items: center;
+    }
+    .background-yellow h2 {
+        font-size: 1.7em;
+    }
+
+    .dots-transitions {
+        width: 1.2rem;
+    }
+
+    .background-yellow {
+        padding: 0% 2% 2% 2%;
+        margin: 0 auto;
+        max-width: 92%;
+    }
+
+    .background-yellow h1 {
+        font-size: 5em;
+    }
+
+   
+    .info-title-text {
+        width: 80%;
+    }
+    .info-title-text p {
+        font-size: 1.6em;
+    }
+
+    .info-title-text img {
+        width: 1rem;
+    }
+    .linguagem {
+        width: 70%;
+    }
+
+    .about-me h2,.contato h2, .curriculo h2,.projects h2{
+        font-size: 2em;
+    }
+
+    li img {
+        width: 7rem;
+    }
+    li h3 {
+        font-size: 1.4em;
+    }
+
+    .curriculo-download h3 {
+        font-size: 1.1em;
+    }
+
+    .curriculo-download img {
+        width: 55%;
+    }
+    li {
+        width: 10rem;
+    }
+    .contato-grid img {
+        width: 6rem;
+    }
+    .bandeiras {
+        width: 4rem;
+    }
+    .curriculo-download img {
+        width: 70%;
+    }
+
+    .containter{
+        transform: scale(0.9);
+    }
+    .contato-grid button {
+        padding: 1rem;
+    }
+}
+@media (max-width:31rem){
+
+    .logo-pedro {
+        width: 4.0rem;
+    }
+
+    .contato-grid div{
+        width: 90%;
+        margin:2% auto;
+    }
+    li {
+        padding: 6% 2%;
+        min-width: 38%;
+        margin: 3% 1.5%;
+        text-align: center;
+    }
+    li img {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:28rem){
+
+    .background-yellow{
+        box-shadow:0   var(--box-shadow);
+        -moz-box-shadow: 0   var(--box-shadow);
+        -webkit-box-shadow: 0   var(--box-shadow);
+        -o-box-shadow: 0   var(--box-shadow);
+
+    }
+
+    .about-me p {
+        font-size: 1.0em;
+    }
+    .linguagem a span {
+        display: none;
+        text-align: center;
+        width: 60%;
+    }
+
+
+    .background-yellow h1{
+        font-size: 4em;
+    }
+    .info-title-text{
+        font-size: 11px;
+    }
+    .container {
+        transform: scale(0.8);
+    }
+
+    li h3 {
+        font-size: 1.35em;
+    }
+    ul {
+        width: 95%;
+    }
+
+    
+    li {
+        img{
+            width: 5rem;
+        }
+        padding: 6% 1%;
+        min-width: 38%;
+        margin: 3% 1.5%;
+        text-align: center;
+    }
+    .contato-grid img {
+        width: 4.6rem;
+    }
+}
+
+@media (max-width:22rem){
+    .curriculo-download {
+        flex-direction: column;
+    }
+      
+
+    .background-yellow h2 {
+        font-size: 1.1rem;
+    }
+
+    .title-text {
+        align-items: center;
+    }
+    
+    .background-yellow h2 {
+        font-size: 1.1rem;
+    }
+    .linguagem a{
+        flex-direction: column;
+        span{
+            display: none;
+
+        }
+    }
+
+}
+

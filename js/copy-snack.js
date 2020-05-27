@@ -29,5 +29,5 @@ function snackShow(event){
     setTimeout(function()
     {
         selecionadoCopyText.classList.replace('snackbar-show','snackbar-hidden'); 
-    }, 3000);
+    }, 2750);
 }

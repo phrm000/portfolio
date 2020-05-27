@@ -1,4 +1,4 @@
-body{
+html{
     font-size: 20px;
 }
 
@@ -24,7 +24,7 @@ header{
 }   
 
 .linguagem{
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,9 +32,9 @@ header{
 
 .container{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    width: 34%;
+    flex-direction: row;
+    align-items: baseline;
+    width:8rem;
     justify-content: space-around;
 }
 
@@ -58,7 +58,7 @@ header{
     left: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 0.0rem;
     transition: .4s;
   }
   
@@ -92,7 +92,7 @@ header{
   }
   
   .slider.round {
-    border-radius: 34px;
+    border-radius: 2rem;
   }
   
   .slider.round:before {
@@ -100,7 +100,7 @@ header{
   }
   
   .container img{
-    width: 2rem;
+    width: 2.5rem;
   }
 
 .linguagem a{
@@ -177,7 +177,7 @@ header{
     display: flex;
     vertical-align: initial;
     justify-content: space-between;
-    width: 60%;
+    width: 62%;
 }
 
 .info-title-text p{
@@ -201,17 +201,22 @@ header{
 
 .snackbar{
     margin: 0 36%;
-    color: white;
+    color: var(--font-negative);
     font-family: $titulo;
     width: 20%;
     padding: 1% 4%;
     text-align: center;
     font-size: 1.6em;
-    background-color: $roxo;
+    background-color: var(--bg-snack);
     border-radius:1.2rem;
     position: fixed;
     z-index: 1;
     bottom: 2rem; 
+    transition: all 0ms;
+    box-shadow: 0.3rem 0.5rem var( --box-shadow-snack);
+    -moz-box-shadow: 0.3rem 0.5rem  var( --box-shadow-snack);
+    -webkit-box-shadow:  0.3rem 0.5rem var( --box-shadow-snack);
+    -o-box-shadow:  0.3rem 0.5rem var( --box-shadow-snack);
 }
 .snackbar-hidden{
     visibility: hidden;
@@ -219,6 +224,7 @@ header{
 }
 
 .snackbar-show{
+  
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -246,7 +252,7 @@ header{
 
 
 .title-img{
-    width: 19rem;
+    width: 29%;
 
 }
 
@@ -260,6 +266,6 @@ html.transition,
 html.transition, *,
 html.transition, *:before,
 html.transition, *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+  transition: all 750ms ;
+  transition-delay: 0 ;
 }

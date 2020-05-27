@@ -36,6 +36,10 @@ chaveNoturno.addEventListener('change', function() {
         phoneIcon.setAttribute("src","img/phoneIcon.svg");
         linkedinIcon.setAttribute("src","img/linkedinIcon.svg");
         gitIcon.setAttribute("src","img/gitIcon.svg");
+        cvPT.setAttribute("src","img/cvPT.svg");
+        cgPT.setAttribute("src","img/cgPT.svg");
+        cvEN.setAttribute("src","img/cvEN.svg");
+        cgEN.setAttribute("src","img/grEN.svg");
 
         
     }

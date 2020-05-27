@@ -16,19 +16,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 
 .contato-grid div{
+    margin: 0 1%;
     color: var(--font);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .contato-grid img{
-    width: 10rem;
+    width: 7rem;
     margin-bottom: 1rem;
 
 }
