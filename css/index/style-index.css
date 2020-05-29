@@ -42,10 +42,27 @@ body {
   width: 99%;
 }
 
-img {
-  -moz-user-select: none;
+img, div, li:not(h3) {
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li h3 {
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+button:focus {
+  outline: 0;
 }
 
 .no-js #loader {
@@ -72,7 +89,7 @@ img {
   justify-content: center;
 }
 .se-pre-con img {
-  width: 30%;
+  width: 15%;
   animation-name: rotacao;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -540,7 +557,7 @@ li:hover {
   font-size: 1em;
 }
 
-.contato-grid button:hover {
+.contato-grid button:hover, .contato-grid button:focus {
   position: relative;
   top: 0.2rem;
 }
@@ -729,7 +746,7 @@ li:hover {
   }
 
   .background-yellow h2 {
-    font-size: 1.7em;
+    font-size: 2em;
   }
 
   .dots-transitions {
@@ -817,6 +834,10 @@ li:hover {
     width: 4.0rem;
   }
 
+  .background-yellow h2 {
+    font-size: 2em;
+  }
+
   .contato-grid div {
     width: 90%;
     margin: 2% auto;
@@ -839,6 +860,10 @@ li:hover {
     -moz-box-shadow: 0 var(--box-shadow);
     -webkit-box-shadow: 0 var(--box-shadow);
     -o-box-shadow: 0 var(--box-shadow);
+  }
+
+  .background-yellow h2 {
+    font-size: 1.7em;
   }
 
   .about-me p {
@@ -892,15 +917,11 @@ li:hover {
   }
 
   .background-yellow h2 {
-    font-size: 1.1rem;
+    font-size: 1.3em;
   }
 
   .title-text {
     align-items: center;
-  }
-
-  .background-yellow h2 {
-    font-size: 1.1rem;
   }
 
   .linguagem a {

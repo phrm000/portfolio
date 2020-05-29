@@ -5,8 +5,7 @@ var loadedpage = function(){
 	// Wait for window load
 	$(window).on("load", function() {
         // Animate loader off screen
-
-        $(".se-pre-con img").addClass("loaded-img");
         
+        $(".se-pre-con img").addClass("loaded-img");
         setTimeout(loadedpage, 2000);
 	});

@@ -120,7 +120,7 @@
         align-items: center;
     }
     .background-yellow h2 {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     .dots-transitions {
@@ -203,6 +203,10 @@
         width: 4.0rem;
     }
 
+    .background-yellow h2 {
+        font-size: 2em;
+    }
+
     .contato-grid div{
         width: 90%;
         margin:2% auto;
@@ -226,7 +230,9 @@
         -o-box-shadow: 0   var(--box-shadow);
 
     }
-
+    .background-yellow h2 {
+        font-size: 1.7em;
+    }
     .about-me p {
         font-size: 1.0em;
     }
@@ -277,16 +283,14 @@
       
 
     .background-yellow h2 {
-        font-size: 1.1rem;
+        font-size: 1.3em;
     }
 
     .title-text {
         align-items: center;
     }
     
-    .background-yellow h2 {
-        font-size: 1.1rem;
-    }
+
     .linguagem a{
         flex-direction: column;
         span{
