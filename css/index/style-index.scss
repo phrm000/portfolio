@@ -10,13 +10,15 @@ html{
     --font-negative:$cinza;
     --bg-snack:$roxo;
     --box-shadow-snack:$roxo-escuro;
-    --scroll:#ccc
+    --scroll:#ccc;
+    --bg-button:$roxo;
 
 
 }
 
 
 html[data-theme='dark'] {
+  
     --bg-title:$laranja;
     --bg-all: $roxo;
     --box-shadow:$roxo-escuro;
@@ -24,7 +26,8 @@ html[data-theme='dark'] {
     --font-negative:$preto;
     --bg-snack:$amarelo;
     --box-shadow-snack:$laranja;
-    --scroll:$laranja
+    --scroll:$laranja;
+    --bg-button:$laranja;
 
 }
 

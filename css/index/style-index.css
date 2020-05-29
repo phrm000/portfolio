@@ -8,6 +8,7 @@ html {
   --bg-snack: #1E0540;
   --box-shadow-snack: #160433;
   --scroll: #ccc;
+  --bg-button: #1E0540;
 }
 
 html[data-theme='dark'] {
@@ -19,6 +20,7 @@ html[data-theme='dark'] {
   --bg-snack: #F7C600;
   --box-shadow-snack: #FF9C01;
   --scroll: #FF9C01;
+  --bg-button: #FF9C01;
 }
 
 ::-webkit-scrollbar {
@@ -550,7 +552,7 @@ li:hover {
 .contato-grid button {
   margin-bottom: 2rem;
   padding: 1rem 1.3rem;
-  background-color: #1E0540;
+  background-color: var(--bg-button);
   border-radius: 1rem;
   color: white;
   font-family: "Merriweather Sans", sans-serif;
