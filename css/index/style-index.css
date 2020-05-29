@@ -862,13 +862,14 @@ li:hover {
   }
 
   ul {
-    width: 98%;
+    width: 99%;
   }
 
   li {
-    padding: 6% 1%;
+    width: 9rem;
+    padding: 8% 1%;
     min-width: 38%;
-    margin: 3% 1.5%;
+    margin: 3% 1%;
     text-align: center;
   }
   li img {
