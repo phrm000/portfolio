@@ -42,6 +42,12 @@ body {
   width: 99%;
 }
 
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .no-js #loader {
   display: none;
 }
@@ -66,7 +72,7 @@ body {
   justify-content: center;
 }
 .se-pre-con img {
-  width: 10rem;
+  width: 30%;
   animation-name: rotacao;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -75,20 +81,20 @@ body {
 
 @keyframes rotacao {
   0% {
-    width: 10rem;
+    width: 15%;
     transform: rotate(0deg);
   }
   25% {
     transform: rotate(0deg);
-    width: 12rem;
+    width: 20%;
   }
   50% {
-    width: 10rem;
+    width: 15%;
     transform: rotate(-405deg);
   }
   75% {
     transform: rotate(-405deg);
-    width: 12rem;
+    width: 20%;
   }
 }
 .loaded-img {
@@ -856,7 +862,7 @@ li:hover {
   }
 
   ul {
-    width: 95%;
+    width: 98%;
   }
 
   li {

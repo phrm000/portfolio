@@ -20,7 +20,7 @@
   justify-content: center;
 
   img {
-    width: 10rem;
+    width: 30%;
     animation-name: rotacao;
     animation-duration:3s;
     animation-iteration-count: infinite;
@@ -30,22 +30,22 @@
 
 @keyframes rotacao {
     0%   {
-        width:10rem;
+        width:15%;
         transform: rotate(0deg);
         
     }
     25%   {
         transform: rotate(0deg);
-        width:12rem;
+        width:20%;
     }
 
     50%   {
-        width:10rem;
+      width:15%;;
         transform: rotate(-405deg);
     }
     75%   {
         transform: rotate(-405deg);
-        width:12rem;
+        width:20%;
     }
 
 }

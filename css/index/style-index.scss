@@ -49,7 +49,11 @@ html[data-theme='dark'] {
 body{
   width: 99%;
 }
-
+img{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 @import 'layout/loader.scss';
 @import 'layout/header.scss';
 @import 'layout/about.scss';
