@@ -25,8 +25,8 @@ chaveNoturno.addEventListener('change', function() {
         gitIcon.setAttribute("src","img/gitIconDark.svg");    
         cvPT.setAttribute("src","img/cvPTDark.svg");
         cgPT.setAttribute("src","img/cgPTDark.svg");
-        cvEN.setAttribute("src","img/cvENDark.svg");
-        cgEN.setAttribute("src","img/grENDark2.svg");
+        cvEN.setAttribute("src","img/cvENDark2.svg");
+        cgEN.setAttribute("src","img/grENDark.svg");
         
     } else {
         trans()
