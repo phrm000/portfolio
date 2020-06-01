@@ -1,0 +1,62 @@
+html{
+    --bg-title:$amarelo;
+    --box-shadow:$cinza;
+    background-color: var(--bg-all);
+    --bg-all: white;
+    --font:$preto;
+    --font-negative:$cinza;
+    --bg-snack:$roxo;
+    --box-shadow-snack:$roxo-escuro;
+    --scroll:#ccc;
+    --bg-button:$roxo;
+
+
+}
+
+
+html[data-theme='dark'] {
+  
+    --bg-title:$laranja;
+    --bg-all: $roxo;
+    --box-shadow:$roxo-escuro;
+    --font:$cinza;
+    --font-negative:$preto;
+    --bg-snack:$amarelo;
+    --box-shadow-snack:$laranja;
+    --scroll:$laranja;
+    --bg-button:$laranja;
+
+}
+
+  ::-webkit-scrollbar {
+      width: 1rem;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 0;
+      border-radius: 0.3rem 0rem 0rem 0.3rem;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--scroll);
+      border-radius: 1rem;
+      border-radius: 2rem 2rem 2rem 2rem;
+    }
+
+
+body{
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+img,div,li:not(h3){
+  -webkit-touch-callout: none;  
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

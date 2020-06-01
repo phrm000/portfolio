@@ -9,6 +9,7 @@ html {
   --box-shadow-snack: #160433;
   --scroll: #ccc;
   --bg-button: #1E0540;
+  width: 98%;
 }
 
 html[data-theme='dark'] {
@@ -21,6 +22,7 @@ html[data-theme='dark'] {
   --box-shadow-snack: #FF9C01;
   --scroll: #FF9C01;
   --bg-button: #FF9C01;
+  width: 98%;
 }
 
 ::-webkit-scrollbar {
@@ -868,6 +870,10 @@ li:hover {
 
   .background-yellow h2 {
     font-size: 1.5em;
+  }
+
+  .info-title-text {
+    width: 100%;
   }
 
   .about-me p {
