@@ -12,12 +12,16 @@ const cvEN = document.querySelector('#C3');
 const cgEN = document.querySelector('#C4');
 
 
+const MvtOnline = document.querySelector('#mvtOnlinepage');
+
+
 
 
 chaveNoturno.addEventListener('change', function() {
     if(this.checked) {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark');
+        MvtOnline.setAttribute("src","img/movimentoOnlinePageDark.svg");
         imgAboutme.setAttribute("src","img/aboutMeDark.svg");
         emailIcon.setAttribute("src","img/emailIconDark.svg");
         phoneIcon.setAttribute("src","img/phoneIconDark.svg");
@@ -29,9 +33,11 @@ chaveNoturno.addEventListener('change', function() {
         cgEN.setAttribute("src","img/grENDark.svg");
         
         
+        
     } else {
         trans()
         document.documentElement.setAttribute('data-theme', 'light');
+        MvtOnline.setAttribute("src","img/MovimentoOnlinePage.svg");
         imgAboutme.setAttribute("src","img/aboutMe.svg");
         emailIcon.setAttribute("src","img/emailIcon.svg");
         phoneIcon.setAttribute("src","img/phoneIcon.svg");
@@ -41,6 +47,7 @@ chaveNoturno.addEventListener('change', function() {
         cgPT.setAttribute("src","img/cgPT.svg");
         cvEN.setAttribute("src","img/cvEN.svg");
         cgEN.setAttribute("src","img/grEN.svg");
+        
 
         
     }

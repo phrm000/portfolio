@@ -9,7 +9,6 @@ html {
   --box-shadow-snack: #160433;
   --scroll: #ccc;
   --bg-button: #1E0540;
-  width: 98%;
 }
 
 html[data-theme='dark'] {
@@ -20,9 +19,8 @@ html[data-theme='dark'] {
   --font-negative: #1A1A1A;
   --bg-snack: #F7C600;
   --box-shadow-snack: #FF9C01;
-  --scroll: #FF9C01;
+  --scroll: #160433;
   --bg-button: #FF9C01;
-  width: 98%;
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-img, div, li:not(h3) {
+img, div:not(p, h1, h2, h3), li:not(h3) {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -56,6 +54,10 @@ img, div, li:not(h3) {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  width: 98%;
 }
 
 li h3 {
@@ -488,6 +490,10 @@ li {
   align-items: center;
   margin: 2% 2%;
   transition: ease-in-out 300ms;
+}
+
+li a {
+  text-decoration: none;
 }
 
 li img {

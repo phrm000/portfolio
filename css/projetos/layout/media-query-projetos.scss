@@ -10,9 +10,31 @@
     }
 }
 
+@media (max-width:54rem){
+
+.img-text-page{
+    flex-direction: column;
+}
+.img-page {
+    width: 90%;
+    padding: 5%;
+}
+.div-between {
+    width: auto;
+    height: 0.5rem;
+}
+.text-page {
+    width: 96%;
+    padding: 0 2%;
+}
+
+    
+}
+
 @media (max-width:45rem){
     .linguagem {
         width: 65%;
+   
     }
 }
 

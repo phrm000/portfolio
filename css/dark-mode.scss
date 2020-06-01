@@ -23,7 +23,7 @@ html[data-theme='dark'] {
     --font-negative:$preto;
     --bg-snack:$amarelo;
     --box-shadow-snack:$laranja;
-    --scroll:$laranja;
+    --scroll:$roxo-escuro;
     --bg-button:$laranja;
 
 }
@@ -51,7 +51,7 @@ body{
   width: 100%;
   margin: 0 auto;
 }
-img,div,li:not(h3){
+img,div:not(p,h1,h2,h3),li:not(h3){
   -webkit-touch-callout: none;  
   -webkit-user-select: none;
   -khtml-user-select: none;

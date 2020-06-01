@@ -1,10 +1,9 @@
 .img-page{
-    
-    width: 100%;
+    width: 54%;
 }
 
 .next-page{
-    padding: 2%;
+    padding: 0% 2% 1% 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,8 +23,19 @@
     transform: scale(1.2);
     transition: 200ms !important;
 }
+.div-between{
+    width: 1%;
+    height: auto;
+    background-color: var(--box-shadow);
+}   
+.img-text-page{
+    display: flex;
+}   
 
 .text-page{
+    height: auto;
+    padding: 2%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,13 +50,7 @@
     color: var(--font);
 }
 
-.text-page p{
-    font-size: 1em;
-    font-family: $texto;
-    color: var(--font);
-    padding: 0 2%;
-    line-height: 1.2em;
-}
+
 
 .btn-direct{
     display: inline-block;
@@ -61,4 +65,40 @@
 .btn-direct:hover, .btn-direct:focus{
     position: relative;
     top: 0.2rem;
+}
+
+
+.text-page p{
+    font-size: 1em;
+    font-family: $texto;
+    color: var(--font);
+    padding: 0 2%;
+    line-height: 1.2em;
+}
+
+.text-page h3{
+    margin: 1% 0%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: $titulo;
+    color: var(--font);
+
+}
+.softwares-text{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-page li{
+    margin: 1%;
+    text-align: center;
+    padding: 0.7rem;
+    border-style: solid;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    font-size: 1em;
+    font-family: $texto;
+    color: var(--font);
 }

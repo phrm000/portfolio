@@ -19,7 +19,7 @@ html[data-theme='dark'] {
   --font-negative: #1A1A1A;
   --bg-snack: #F7C600;
   --box-shadow-snack: #FF9C01;
-  --scroll: #FF9C01;
+  --scroll: #160433;
   --bg-button: #FF9C01;
 }
 
@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-img, div, li:not(h3) {
+img, div:not(p, h1, h2, h3), li:not(h3) {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -195,11 +195,11 @@ html.transition, *:after {
 }
 
 .img-page {
-  width: 100%;
+  width: 54%;
 }
 
 .next-page {
-  padding: 2%;
+  padding: 0% 2% 1% 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,7 +223,20 @@ html.transition, *:after {
   transition: 200ms !important;
 }
 
+.div-between {
+  width: 1%;
+  height: auto;
+  background-color: var(--box-shadow);
+}
+
+.img-text-page {
+  display: flex;
+}
+
 .text-page {
+  height: auto;
+  padding: 2%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,14 +248,6 @@ html.transition, *:after {
   font-size: 2em;
   font-family: "Barlow Condensed", sans-serif;
   color: var(--font);
-}
-
-.text-page p {
-  font-size: 1em;
-  font-family: "Merriweather Sans", sans-serif;
-  color: var(--font);
-  padding: 0 2%;
-  line-height: 1.2em;
 }
 
 .btn-direct {
@@ -261,6 +266,42 @@ html.transition, *:after {
   top: 0.2rem;
 }
 
+.text-page p {
+  font-size: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+  padding: 0 2%;
+  line-height: 1.2em;
+}
+
+.text-page h3 {
+  margin: 1% 0%;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Barlow Condensed", sans-serif;
+  color: var(--font);
+}
+
+.softwares-text {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-page li {
+  margin: 1%;
+  text-align: center;
+  padding: 0.7rem;
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 0.1rem;
+  font-size: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+}
+
 @media (max-width: 75rem) {
   html {
     font-size: 18px;
@@ -269,6 +310,26 @@ html.transition, *:after {
 @media (max-width: 62.5rem) {
   html {
     font-size: 16px;
+  }
+}
+@media (max-width: 54rem) {
+  .img-text-page {
+    flex-direction: column;
+  }
+
+  .img-page {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .div-between {
+    width: auto;
+    height: 0.5rem;
+  }
+
+  .text-page {
+    width: 96%;
+    padding: 0 2%;
   }
 }
 @media (max-width: 45rem) {

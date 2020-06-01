@@ -36,6 +36,10 @@ li{
     transition: ease-in-out 300ms;
 }
 
+li a{
+    text-decoration: none;
+}
+
 li img{
     width:10rem;
     margin-bottom: 2rem;
