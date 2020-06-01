@@ -46,7 +46,7 @@ body {
   margin: 0 auto;
 }
 
-img, div:not(p, h1, h2, h3), li:not(h3) {
+li img, img, div:not(p, h1, h2, h3), li:not(h3) {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
