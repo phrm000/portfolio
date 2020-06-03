@@ -11,10 +11,10 @@ const cgPT = document.querySelector('#C2');
 const cvEN = document.querySelector('#C3');
 const cgEN = document.querySelector('#C4');
 
-
+const Stickers = document.querySelector('#adesivosImg');
 const MvtOnline = document.querySelector('#mvtOnlinepage');
 
-const Stickers = document.querySelector('#adesivosPageImg');
+
 
 
 chaveNoturno.addEventListener('change', function() {
