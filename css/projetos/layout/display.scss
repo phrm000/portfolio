@@ -1,6 +1,7 @@
 .img-page{
-    height: 54%;
-    width: 54%;
+    padding-right: 2%;
+    height: 52%;
+    width: 52%;
     margin: auto 0;
 }
 
@@ -86,6 +87,31 @@
     color: var(--font);
 
 }
+
+
+.works-display{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+
+        width: 28%;
+        margin: 2% 0%;
+        
+        img{
+        height: auto;
+        width: 100%;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}
 .softwares-text{
     width: 90%;
     display: flex;
@@ -93,7 +119,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.text-page li{
+.softwares-text li{
     margin: 1%;
     text-align: center;
     padding: 0.7rem;
