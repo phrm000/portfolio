@@ -14,13 +14,14 @@ const cgEN = document.querySelector('#C4');
 
 const MvtOnline = document.querySelector('#mvtOnlinepage');
 
-
+const Stickers = document.querySelector('#adesivosPageImg');
 
 
 chaveNoturno.addEventListener('change', function() {
     if(this.checked) {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark');
+        Stickers.setAttribute("src","img/StickersDark.png");
         MvtOnline.setAttribute("src","img/movimentoOnlinePageDark.svg");
         imgAboutme.setAttribute("src","img/aboutMeDark.svg");
         emailIcon.setAttribute("src","img/emailIconDark.svg");
@@ -37,6 +38,7 @@ chaveNoturno.addEventListener('change', function() {
     } else {
         trans()
         document.documentElement.setAttribute('data-theme', 'light');
+        Stickers.setAttribute("src","img/Stickers.png");
         MvtOnline.setAttribute("src","img/MovimentoOnlinePage.svg");
         imgAboutme.setAttribute("src","img/aboutMe.svg");
         emailIcon.setAttribute("src","img/emailIcon.svg");
@@ -47,6 +49,7 @@ chaveNoturno.addEventListener('change', function() {
         cgPT.setAttribute("src","img/cgPT.svg");
         cvEN.setAttribute("src","img/cvEN.svg");
         cgEN.setAttribute("src","img/grEN.svg");
+        
         
 
         

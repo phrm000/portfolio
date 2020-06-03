@@ -10,15 +10,16 @@
     }
 }
 
-@media (max-width:54rem){
+@media (max-width:56rem){
 
 .img-text-page{
     flex-direction: column;
 }
 .img-page {
-    width: 90%;
-    padding: 5%;
+    width: 98%;
+    padding: 5% 1%;
 }
+
 .div-between {
     width: auto;
     height: 0.5rem;

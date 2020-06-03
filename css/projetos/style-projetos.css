@@ -195,7 +195,9 @@ html.transition, *:after {
 }
 
 .img-page {
+  height: 54%;
   width: 54%;
+  margin: auto 0;
 }
 
 .next-page {
@@ -251,7 +253,6 @@ html.transition, *:after {
 }
 
 .btn-direct {
-  min-width: 20%;
   display: inline-block;
   margin: 1rem 0;
   padding: 1rem 1.3rem;
@@ -313,14 +314,14 @@ html.transition, *:after {
     font-size: 16px;
   }
 }
-@media (max-width: 54rem) {
+@media (max-width: 56rem) {
   .img-text-page {
     flex-direction: column;
   }
 
   .img-page {
-    width: 90%;
-    padding: 5%;
+    width: 98%;
+    padding: 5% 1%;
   }
 
   .div-between {
