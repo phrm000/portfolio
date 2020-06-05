@@ -14,7 +14,7 @@
 
 .closeX{
     position: relative;
-    left: 95%;
+    left: 90%;
     font-weight: bold;
     cursor: pointer;
     color: var(--font);
@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
 
     li{
@@ -98,7 +98,7 @@
         user-select: none;
         -webkit-tap-highlight-color: transparent;
         height: auto;
-        width: 4rem;
+        width: 5rem;
         cursor: pointer;
         opacity: 70%;
 

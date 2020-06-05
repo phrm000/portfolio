@@ -4,7 +4,7 @@ const worksList = document.querySelectorAll(".works-display");
 const Xclick = document.querySelector(".closeX");
 const lightBoxThumb = document.querySelector(".modal-content_thumb");
 const lightBoxPrincipal = document.querySelector(".modal-content_principal-image");
-
+const body = document.querySelector(".non-modal");
 
 
 Xclick.addEventListener("click", CloselightBox);
@@ -22,7 +22,7 @@ for (let i = 0; i < imgList.length; i++) {
 
 
 function lightBox(event) {
-  
+    body.style.display="none";
     document.querySelector("#lightBoxModal").style.display = "block";
     
 }
@@ -65,6 +65,7 @@ function Slidesfunction(n) {
   }
 
 function CloselightBox(){    
+  body.style.display="block ";
   var dots = document.querySelectorAll(".modal-content_thumb li");  
     for(l = 0; l < dots.length;l++){
       dots[l].classList.remove("active");
