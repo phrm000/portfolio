@@ -11,22 +11,9 @@ const cgPT = document.querySelector('#C2');
 const cvEN = document.querySelector('#C3');
 const cgEN = document.querySelector('#C4');
 
-const Flyer = document.querySelector('#flyerImg');
-const Stickers = document.querySelector('#adesivosImg');
+
 const MvtOnline = document.querySelector('#mvtOnlinepage');
 
-const mulherWork = document.querySelector('#workMulher');
-const punkWork = document.querySelector('#workPunk');
-const rockoutWork = document.querySelector('#workRockout');
-const humanityWork = document.querySelector('#workHumanity');
-const workoutWork = document.querySelector('#workWorkout');
-const old1Work = document.querySelector('#workOld1');
-const old2Work = document.querySelector('#workOld2');
-const jungleWork = document.querySelector('#workjungle');
-const babeWork = document.querySelector('#workBabe');
-const sunWork = document.querySelector('#workSun');
-const greenWork = document.querySelector('#workGreen');
-const daVinciWork = document.querySelector('#workDavinci');
 
 
 chaveNoturno.addEventListener('change', function() {
@@ -34,7 +21,7 @@ chaveNoturno.addEventListener('change', function() {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark');
         
-        Stickers.setAttribute("src","img/StickersDark.png");
+        
         MvtOnline.setAttribute("src","img/movimentoOnlinePageDark.svg");
         imgAboutme.setAttribute("src","img/aboutMeDark.svg");
         emailIcon.setAttribute("src","img/emailIconDark.svg");
@@ -53,7 +40,7 @@ chaveNoturno.addEventListener('change', function() {
         document.documentElement.setAttribute('data-theme', 'light');
         
         
-        Stickers.setAttribute("src","img/Stickers.png");
+        
         MvtOnline.setAttribute("src","img/MovimentoOnlinePage.svg");
         imgAboutme.setAttribute("src","img/aboutMe.svg");
         emailIcon.setAttribute("src","img/emailIcon.svg");

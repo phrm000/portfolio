@@ -2,3 +2,5 @@
 [0603/115145.823:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
 [0603/115146.683:ERROR:exception_snapshot_win.cc(98)] thread ID 36208 not found in process
 [0603/115146.683:ERROR:exception_snapshot_win.cc(98)] thread ID 31360 not found in process
+[0604/175420.592:ERROR:process_info.cc(359)] UncheckedAllocate
+[0604/175556.342:ERROR:process_info.cc(359)] UncheckedAllocate

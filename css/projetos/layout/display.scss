@@ -100,14 +100,16 @@
 
         width: 28%;
         margin: 2% 0%;
+        cursor: pointer;
         
         img{
         height: auto;
         width: 100%;
+        
         }
 
         img:hover{
-            transform: scale(1.2);
+            transform: scale(1.3);
         }
     }
 
