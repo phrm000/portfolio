@@ -414,6 +414,7 @@ html.transition, *:after {
   }
 }
 .ModalLB {
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -433,10 +434,18 @@ html.transition, *:after {
   font-size: 4em;
   font-family: "Barlow Condensed", sans-serif;
   top: 5%;
+  opacity: 0.8;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .closeX:hover {
-  font-size: 4.4em;
+  opacity: 1;
 }
 
 .modal-content_principal {
@@ -451,10 +460,24 @@ html.transition, *:after {
   color: var(--font);
   cursor: pointer;
   height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .modal-content_principal .modal-content_principal-image {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   height: auto;
-  width: 40%;
+  width: 24rem;
   margin: 0 auto;
 }
 .modal-content_principal .modal-content_principal-image li {
@@ -462,9 +485,11 @@ html.transition, *:after {
 }
 .modal-content_principal .modal-content_principal-image img {
   width: 100%;
+  display: none;
 }
 
 .modal-content_thumb {
+  width: 90%;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -472,14 +497,27 @@ html.transition, *:after {
   flex-wrap: wrap;
 }
 .modal-content_thumb li {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   height: auto;
-  width: 7rem;
+  width: 4rem;
   cursor: pointer;
+  opacity: 70%;
 }
 .modal-content_thumb li img {
   width: 100%;
-  opacity: 70%;
 }
-.modal-content_thumb li .img-selecionado, .modal-content_thumb li img:hover {
+.modal-content_thumb li:hover {
   opacity: 100%;
+}
+
+.active {
+  transition: ease 300ms;
+  transform: scale(1.3);
+  opacity: 100% !important;
 }
