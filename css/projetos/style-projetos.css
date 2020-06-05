@@ -419,22 +419,67 @@ html.transition, *:after {
   left: 0;
   top: 0;
   width: 100%;
-  height: 90%;
-  padding: 5% 0;
+  height: 100%;
   overflow: auto;
   background-color: var(--bg-all);
 }
 
 .closeX {
   position: relative;
-  left: 90%;
+  left: 95%;
   font-weight: bold;
   cursor: pointer;
   color: var(--font);
-  font-size: 5em;
+  font-size: 4em;
   font-family: "Barlow Condensed", sans-serif;
+  top: 5%;
 }
 
 .closeX:hover {
-  font-size: 5.4em;
+  font-size: 4.4em;
+}
+
+.modal-content_principal {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.modal-content_principal a {
+  font-size: 4em;
+  color: var(--font);
+  cursor: pointer;
+  height: 100%;
+}
+.modal-content_principal .modal-content_principal-image {
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+}
+.modal-content_principal .modal-content_principal-image li {
+  display: none;
+}
+.modal-content_principal .modal-content_principal-image img {
+  width: 100%;
+}
+
+.modal-content_thumb {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modal-content_thumb li {
+  height: auto;
+  width: 7rem;
+  cursor: pointer;
+}
+.modal-content_thumb li img {
+  width: 100%;
+  opacity: 70%;
+}
+.modal-content_thumb li .img-selecionado, .modal-content_thumb li img:hover {
+  opacity: 100%;
 }
