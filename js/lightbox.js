@@ -22,6 +22,7 @@ for (let i = 0; i < imgList.length; i++) {
 
 
 function lightBox(event) {
+    lightBoxThumb.style.justifyContent="center";
     body.style.display="none";
     document.querySelector("#lightBoxModal").style.display = "block";
     

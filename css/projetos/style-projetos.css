@@ -244,6 +244,9 @@ html.transition, *:after {
   flex-direction: column;
   align-items: center;
 }
+.text-page em {
+  font-style: italic;
+}
 
 .text-page h2 {
   margin: 2%;
@@ -285,6 +288,10 @@ html.transition, *:after {
   color: var(--font);
 }
 
+#my-video {
+  margin: 3% auto;
+}
+
 .works-display {
   display: flex;
   justify-content: space-between;
@@ -303,6 +310,15 @@ html.transition, *:after {
 }
 .works-display li img:hover {
   transform: scale(1.3);
+}
+
+.participants-text {
+  font-size: 1em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+  display: block;
+  text-align: center;
+  line-height: 1.5em;
 }
 
 .softwares-text {
@@ -446,6 +462,7 @@ html.transition, *:after {
 
 .closeX:hover {
   opacity: 1;
+  transition: 0s all !important;
 }
 
 .modal-content_principal {
@@ -467,6 +484,11 @@ html.transition, *:after {
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
+  opacity: 0.8;
+}
+.modal-content_principal a:hover {
+  opacity: 1;
+  transition: 0s all !important;
 }
 .modal-content_principal .modal-content_principal-image {
   -webkit-touch-callout: none;
@@ -489,14 +511,12 @@ html.transition, *:after {
 }
 
 .modal-content_thumb {
-  width: 95%;
   display: flex;
   align-items: center;
-  padding-left: 5%;
-  justify-content: start;
   flex-wrap: wrap;
 }
 .modal-content_thumb li {
+  margin: 0 1%;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -505,7 +525,7 @@ html.transition, *:after {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   height: auto;
-  width: 5rem;
+  width: 4rem;
   cursor: pointer;
   opacity: 70%;
 }

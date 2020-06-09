@@ -33,6 +33,7 @@
 
 .closeX:hover{
     opacity: 1;
+    transition: 0s all !important;
 }
 
 
@@ -55,6 +56,12 @@
         -ms-user-select: none;
         user-select: none;
         -webkit-tap-highlight-color: transparent;
+        opacity: 0.8;
+    }
+
+    a:hover{
+        opacity: 1;
+        transition: 0s all !important;
     }
 
     .modal-content_principal-image{
@@ -82,14 +89,12 @@
 
 
 .modal-content_thumb{
-    width: 95%;
     display: flex;
     align-items: center;
-    padding-left: 5%;
-    justify-content: start;
     flex-wrap: wrap;
 
     li{
+        margin: 0 1%;
         -webkit-touch-callout: none;  
         -webkit-user-select: none;
         -khtml-user-select: none;
@@ -98,7 +103,7 @@
         user-select: none;
         -webkit-tap-highlight-color: transparent;
         height: auto;
-        width: 5rem;
+        width: 4rem;
         cursor: pointer;
         opacity: 70%;
 

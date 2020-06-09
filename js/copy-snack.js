@@ -30,6 +30,10 @@ function snackShow(event){
        
     }  
        
+    console.log(selecionadoCopyText);
+       
+    
+    
         selecionadoCopyText.classList.replace('snackbar-hidden','snackbar-show');
     setTimeout(function()
     {
