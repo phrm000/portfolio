@@ -20,7 +20,6 @@ chaveNoturno.addEventListener('change', function() {
     if(this.checked) {
         trans()
         document.documentElement.setAttribute('data-theme', 'dark');
-
         imgAboutme.setAttribute("src","img/aboutMeDark.svg");
         emailIcon.setAttribute("src","img/emailIconDark.svg");
         phoneIcon.setAttribute("src","img/phoneIconDark.svg");
