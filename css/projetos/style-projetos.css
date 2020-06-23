@@ -175,7 +175,7 @@ input:checked + .slider:before {
 
 .linguagem a img {
   transition: 0.3s;
-  width: 2rem;
+  width: 2.5rem;
 }
 
 .linguagem a:hover {
@@ -190,7 +190,7 @@ html.transition,
 html.transition, *,
 html.transition, *:before,
 html.transition, *:after {
-  transition: all 750ms;
+  transition: background-color 750ms, color 750ms;
   transition-delay: 0;
 }
 
@@ -233,6 +233,7 @@ html.transition, *:after {
 }
 
 .img-text-page {
+  transition: all 0ms;
   display: flex;
 }
 
@@ -307,8 +308,10 @@ html.transition, *:after {
 .works-display li img {
   height: auto;
   width: 100%;
+  transition: 0.4s;
 }
 .works-display li img:hover {
+  transition: 0.4s;
   transform: scale(1.3);
 }
 
@@ -514,6 +517,7 @@ html.transition, *:after {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2%;
 }
 .modal-content_thumb li {
   margin: 0 1%;

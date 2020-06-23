@@ -266,6 +266,6 @@ html.transition,
 html.transition, *,
 html.transition, *:before,
 html.transition, *:after {
-  transition: all 750ms ;
+  transition: background-color 750ms, color 750ms, box-shadow 750ms;
   transition-delay: 0 ;
 }

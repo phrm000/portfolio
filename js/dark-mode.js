@@ -19,6 +19,7 @@ const MvtOnline = document.querySelector('#mvtOnlinepage');
 chaveNoturno.addEventListener('change', function() {
     if(this.checked) {
         trans()
+        localStorage
         document.documentElement.setAttribute('data-theme', 'dark');
         imgAboutme.setAttribute("src","img/aboutMeDark.svg");
         emailIcon.setAttribute("src","img/emailIconDark.svg");

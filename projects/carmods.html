@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="htmlFile">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Portfólio - Pedro Morais</title>
+        <link rel="icon" type="png" sizes="96x96" href="../img/logoIcon.png">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/projetos/style-projetos.css">
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link  rel="stylesheet" href="../css/video-js.css">
+        <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+    </head>
+    <body>
+        <section class="non-modal">
+            <header>
+
+                <a href="../en.index.html"><img src="../img/logoPedro.svg" class="logo-pedro"></a>
+
+                <div class="linguagem" >
+
+                    <div class="container">
+                        <label class="switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" name="theme"/>
+                        <div class="slider round"></div>
+                        </label>
+                        <img src="../img/modoNoturno.svg">
+                    </div>
+
+                    <a href="../projetos/carmods.html" style="text-decoration: none;">
+                        <span >Ir para o português</span>
+                        <img src="../img/brFlag.svg">
+                    </a>
+                </div>
+            </header>
+
+        <section role="main" class="display">
+
+            <div class="next-page">
+                <a href="collages.html"><img src="../img/previous.svg"></a>
+                <h1>Carmods</h1>
+                <a href="events-and-donations.html"><img src="../img/next.svg"></a>
+            </div>
+
+            
+
+            <div class="img-text-page" >
+                <img class="img-page" src="../img/carmodspage.png" id="flyerImg">
+
+                <div class="div-between"></div>
+
+                <div class="text-page">
+                    <h2>Innovative and competitive</h2>
+                    <p>
+                        &ensp;&ensp;&ensp; Carmods is a project made for the lecture of Applied Eletronics, lecture that the professors guides a Completion of Course Work,  for the Technical Course in Electronics Integrated to the High School of UTFPR.
+                    </p>
+
+                    <p>
+                        &ensp;&ensp;&ensp; The intent was to design a product that could be introduced to the market. Thinking about it, it was created the Tilt-Down Module of Carmods, in a nutshell it can be define as:
+                        
+                    </p>
+
+                    <p><em>&ensp;&ensp;&ensp;A ‘Plug and play’ module that implement the vehicle the function to automatically tilt the eletric mirrors when the reverse is active, facilitating parallel park and others parking maneuvers. Offering the following modes of use: Automatic, Semi-automatic and a new third one, the dynamic.
+                    </em></p>
+
+                    <p>
+                        &ensp;&ensp;&ensp; The project, adds a new function, not yet on the market, drawing attention for the use of professional methos like weld in JLCPCB cards and by the success in implementing the prototype in a car. Reaching the maximum grade rated by Professor Rubens Alexandre de Faria.
+                        
+                    </p>
+
+                    <h3>Members of the project</h3>
+                    <ul class="participants-text">
+                        <li>Luan Rogalewski de Medeiros</li>
+                        <li>Pedro Henrique Reis de Morais</li>
+                        <li>Pedro Michalouski dos Santos Lima</li>                       
+                    </ul>
+
+                    <h3>Demo Video</h3>
+                    <video
+                        id="my-video"
+                        class="video-js propriedades-video"
+                        controls preload="auto"
+                        width="400px"
+                        height="auto"
+                        data-setup="{}"
+                        >
+                    <source src="../img/carmods2.mp4" type="video/mp4" /></video>
+
+                   
+
+
+                    <h3>Used softwares</h3>
+                    <ul class="softwares-text">
+                        <li>Adobe Ai</li>
+                        <li>Adobe Ae</li>
+                        <li>Adobe Ps</li>
+                        <li>Proteus</li>                        
+                    </ul>
+
+                   
+                    <h3>Used languages</h3>
+                    <ul class="softwares-text">
+                        <li>C</li>                      
+                    </ul>
+
+                    
+                   
+                    
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+        <div id="lightBoxModal" class="ModalLB">
+           
+            <div class="modal-content">
+                <span class="closeX" >&times;</span>
+                <div class="modal-content_principal">
+                    <a class="prev" onclick="slideNav(-1)">&#10094;</a>
+                    <div class="modal-content_principal-image"></div>
+                    <a class="next" onclick="slideNav(1)">&#10095;</a>
+                </div>
+                
+                <ul class="modal-content_thumb">
+
+                </ul>
+            
+            
+            </div>
+
+    </body>
+</html>
+<script src="https://vjs.zencdn.net/7.7.6/video.js"></script>
+<script src="../js/lightbox.js"></script>
+<script src="../js/dark-mode.js"></script>
+<script src="../js/image-change.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>

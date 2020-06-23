@@ -7,6 +7,26 @@ const lightBoxPrincipal = document.querySelector(".modal-content_principal-image
 const body = document.querySelector(".non-modal");
 
 
+
+document.addEventListener("keydown", function(event) {
+  if(event.keyCode === 27){
+     CloselightBox (event);
+ }
+});
+
+document.addEventListener("keydown", function(event) {
+  if(event.keyCode === 39){
+     slideNav(1);
+ }
+});
+
+document.addEventListener("keydown", function(event) {
+  if(event.keyCode === 37){
+    slideNav(-1);
+ }
+});
+
+
 Xclick.addEventListener("click", CloselightBox);
 let i;
 for (let i = 0; i < imgList.length; i++) {

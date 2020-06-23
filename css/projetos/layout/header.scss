@@ -125,7 +125,7 @@ header{
 
 .linguagem a img{
     transition: 0.3s;
-    width: 2rem;
+    width: 2.5rem;
 }
 
 .linguagem a:hover{
@@ -141,6 +141,8 @@ html.transition,
 html.transition, *,
 html.transition, *:before,
 html.transition, *:after {
-  transition: all 750ms ;
+  transition: background-color 750ms, color 750ms ;
   transition-delay: 0 ;
 }
+
+
