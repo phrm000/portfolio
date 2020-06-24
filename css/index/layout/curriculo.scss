@@ -21,6 +21,7 @@
 }
 
 .bandeiras{
+    @include unselect;
     transform: translateX(-16%);
     width: 6rem;
     margin-bottom: 3%;
@@ -58,6 +59,7 @@
     img{
         width: 10rem;
         margin: 0 auto;
+        @include unselect;
     }
 
     h3{

@@ -17,6 +17,7 @@ header{
 }   
 
 .logo-pedro{
+  @include unselect;
 
     width: 3.5rem;
     transition: ease-in-out 1.3s;
@@ -107,6 +108,8 @@ header{
   }
   
   .container img{
+    @include unselect;
+
     width: 2.5rem;
   }
 
@@ -124,6 +127,8 @@ header{
 }
 
 .linguagem a img{
+  @include unselect;
+
     transition: 0.3s;
     width: 2.5rem;
 }
@@ -132,6 +137,7 @@ header{
     transition: 0.3s;
     font-size: 1.0em;
     img{
+      
         transform: scale(1.2);
     }
 }

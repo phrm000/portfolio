@@ -45,6 +45,7 @@ li a{
 }
 
 li img{
+    @include unselect;
     width:10rem;
     margin-bottom: 2rem;
     

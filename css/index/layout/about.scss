@@ -40,6 +40,7 @@
 }
 
 .about-me-img{
+    @include unselect;
     width: 40%;
 }
 

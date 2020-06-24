@@ -33,6 +33,7 @@
 .contato-grid img{
     width: 7rem;
     margin-bottom: 1rem;
+    @include unselect;
 
 }
 
@@ -50,6 +51,7 @@
 }
 
 .contato-grid button{
+    cursor: pointer;
     margin-bottom: 2rem;
     padding: 1rem 1.3rem;
     background-color:var(--bg-button);

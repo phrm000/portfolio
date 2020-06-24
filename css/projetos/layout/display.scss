@@ -32,8 +32,14 @@
     background-color: var(--box-shadow);
 }   
 .img-text-page{
+    
     transition: all 0ms;
     display: flex;
+
+    img{
+
+        @include unselect;
+    }
 }   
 
 .text-page{
@@ -110,6 +116,7 @@
         cursor: pointer;
         
         img{
+        @include unselect;
         height: auto;
         width: 100%;
         transition: 0.4s;

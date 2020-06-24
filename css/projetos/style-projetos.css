@@ -71,6 +71,13 @@ header {
 }
 
 .logo-pedro {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   width: 3.5rem;
   transition: ease-in-out 1.3s;
 }
@@ -156,6 +163,13 @@ input:checked + .slider:before {
 }
 
 .container img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   width: 2.5rem;
 }
 
@@ -174,6 +188,13 @@ input:checked + .slider:before {
 }
 
 .linguagem a img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   transition: 0.3s;
   width: 2.5rem;
 }
@@ -235,6 +256,15 @@ html.transition, *:after {
 .img-text-page {
   transition: all 0ms;
   display: flex;
+}
+.img-text-page img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .text-page {
@@ -306,6 +336,13 @@ html.transition, *:after {
   cursor: pointer;
 }
 .works-display li img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
   height: auto;
   width: 100%;
   transition: 0.4s;
