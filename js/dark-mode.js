@@ -16,9 +16,17 @@ const cgEN = document.querySelector("#C4");
 
 const MvtOnline = document.querySelector("#mvtOnlinepage");
 
+if (localStorage.getItem("mode") == "true") {
+    darkModeTransition.classList.remove(".htmlTransitionDark");
+    
+    chaveNoturno.checked = true;
+    changeMode();
+    
 
 
-document.addEventListener("DOMContentLoaded", checkMode);
+}
+
+
 chaveNoturno.addEventListener("change", changeMode);
 addEventListener("load",function(){
     darkModeTransition.style.transition=" background-color 750ms, color 750ms, box-shadow 750ms";
@@ -51,17 +59,9 @@ function changeMode() {
     
 }
 
-function checkMode() {
-    darkModeTransition.style.display="block"
-    if (localStorage.getItem("mode") == "true") {
-        darkModeTransition.classList.remove(".htmlTransitionDark");
-        
-        chaveNoturno.checked = true;
-        changeMode();
-        
+
 
     
-    }
-}
+
 
 
