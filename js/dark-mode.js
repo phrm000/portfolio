@@ -16,13 +16,13 @@ const cgEN = document.querySelector("#C4");
 
 const MvtOnline = document.querySelector("#mvtOnlinepage");
 
-if (localStorage.getItem("mode") == "true") {
+if (sessionStorage .getItem("mode") == "true") {
     darkModeTransition.classList.remove(".htmlTransitionDark");
     
     chaveNoturno.checked = true;
     changeMode();
     
-    
+
 
 
 }
@@ -43,7 +43,7 @@ function changeMode() {
         modeS = mode;
     }
 
-    localStorage.setItem("mode", chaveNoturno.checked);
+    sessionStorage .setItem("mode", chaveNoturno.checked);
     document.documentElement.setAttribute("data-theme", modeS);
     if (document.documentURI.split("/")[4] == undefined) {
 
