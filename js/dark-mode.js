@@ -45,8 +45,7 @@ function changeMode() {
 
     sessionStorage .setItem("mode", chaveNoturno.checked);
     document.documentElement.setAttribute("data-theme", modeS);
-    if (document.documentURI.split("/")[4] == undefined) {
-
+   
         imgAboutme.setAttribute("src", `img/aboutMe${mode}.svg`);
         emailIcon.setAttribute("src", `img/emailIcon${mode}.svg`);
         phoneIcon.setAttribute("src", `img/phoneIcon${mode}.svg`);
@@ -56,7 +55,7 @@ function changeMode() {
         cgPT.setAttribute("src",`img/cgPT${mode}.svg`);
         cgEN.setAttribute("src", `img/grEN${mode}.svg`);
         cvEN.setAttribute("src",`img/cvEN${mode}.svg`);
-    }
+    
     
 }
 
