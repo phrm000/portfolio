@@ -22,6 +22,7 @@ if (localStorage.getItem("mode") == "true") {
     chaveNoturno.checked = true;
     changeMode();
     
+    
 
 
 }
