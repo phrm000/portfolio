@@ -207,12 +207,8 @@ input:checked + .slider:before {
   transform: scale(1.2);
 }
 
-html.transition,
-html.transition, *,
-html.transition, *:before,
-html.transition, *:after {
-  transition: background-color 750ms, color 750ms;
-  transition-delay: 0;
+.htmlTransitionDark {
+  transition: background-color 750ms, color 750ms, box-shadow 750ms;
 }
 
 .img-page {
@@ -289,7 +285,7 @@ html.transition, *:after {
 
 .btn-direct {
   display: inline-block;
-  margin: 1rem 0;
+  margin: 0.4rem 0;
   padding: 1rem 1.3rem;
   background-color: var(--bg-button);
   border-radius: 1rem;

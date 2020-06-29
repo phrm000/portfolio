@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="htmlFile">
+<html lang="pt-br" class="htmlFile" ready="checkMode()">
 
     <head>
         <meta charset="UTF-8">
 
-        <title>Portfólio - Pedro Morais</title>
+        <title>Portfolio - Pedro Morais</title>
         <link rel="icon" type="png" sizes="96x96" href="../img/logoIcon.png">
 
 
@@ -23,9 +23,19 @@
 
         <link  rel="stylesheet" href="../css/video-js.css">
         <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+        <script>
+            function checkMode() {
+                if (localStorage.getItem("mode") == "true") {
+                darkModeTransition.classList.remove(".htmlTransitionDark");
+                chaveNoturno.checked = true;
+                changeMode();
 
+            
+                }   
+            }
+        </script>
     </head>
-    <body>
+    <body >
         <section class="non-modal">
             <header>
 

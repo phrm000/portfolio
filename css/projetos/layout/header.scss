@@ -142,13 +142,6 @@ header{
     }
 }
 
-
-html.transition,
-html.transition, *,
-html.transition, *:before,
-html.transition, *:after {
-  transition: background-color 750ms, color 750ms ;
-  transition-delay: 0 ;
+.htmlTransitionDark{
+      transition: background-color 750ms, color 750ms, box-shadow 750ms;
 }
-
-
