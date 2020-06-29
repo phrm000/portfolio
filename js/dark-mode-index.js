@@ -27,7 +27,7 @@ function changeMode() {
     localStorage.setItem("mode", chaveNoturno.checked);
     document.documentElement.setAttribute("data-theme", modeS);
     if (document.documentURI.split("/")[4] == undefined) {
-        imgAboutme.setAttribute("src",` img/aboutMe${mode}.svg`);
+        imgAboutme.setAttribute("src"," img/aboutMe" + mode + ".svg");
         emailIcon.setAttribute("src",` img/emailIcon${mode}.svg`);
         phoneIcon.setAttribute("src", `img/phoneIcon${mode}.svg`);
         linkedinIcon.setAttribute("src", `img/linkedinIcon${mode}.svg`);
