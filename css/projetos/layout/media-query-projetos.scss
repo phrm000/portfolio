@@ -82,6 +82,15 @@
 }
 @media (max-width:28rem){
 
+    .my-video-dimensions {
+        width: 260px;
+        height: 146px;
+    }
+    html .video-js .vjs-big-play-button {
+        font-size: 2em;
+        line-height: 1.4em;
+    }
+
     .container {
         transform: scale(0.8);
     }
