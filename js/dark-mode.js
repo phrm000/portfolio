@@ -54,7 +54,7 @@ function changeMode() {
         cvPT.setAttribute("src", `img/cvPT${mode}.svg`);
         cgPT.setAttribute("src",`img/cgPT${mode}.svg`);
         cgEN.setAttribute("src", `img/grEN${mode}.svg`);
-        cvEN.setAttribute("src",`img/cvENDark2.svg`);
+        cvEN.setAttribute("src",`img/cvEN${mode}.svg`);
     }
     
 }
