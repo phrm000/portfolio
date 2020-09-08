@@ -2,8 +2,9 @@
 @import '../dark-mode.scss';
 
 
-html{
-  width: 98%;
+html {
+  margin: 0 3.5%;
+  width: 93%
 }
 li h3{
   -webkit-touch-callout: text;
@@ -22,6 +23,7 @@ button:focus {
 @import 'layout/header.scss';
 @import 'layout/about.scss';
 @import 'layout/projects.scss';
+@import 'layout/articles.scss';
 @import 'layout/contato.scss';
 @import 'layout/curriculo.scss';
 @import 'layout/media-queries-index.scss';

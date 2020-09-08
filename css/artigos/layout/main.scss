@@ -1,0 +1,80 @@
+.article-img{
+    width: 100%;
+
+}
+
+
+h1{
+    margin: 2% 2% 1% 2%;
+    font-size: 2.8em;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    color: var(--font);
+}
+
+h2{
+    margin-left: 2%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--font);
+
+}
+
+.header-title span{
+    display:block;
+    margin-right: 2%;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--font);
+    text-align: end;
+}
+b {
+    color: $laranja;
+  }
+
+.text-page{
+    width: 90%;
+    margin:5%;
+}
+
+.text-page ul{
+    width: 90%;
+    margin:2% 5%;
+}
+.text-page p{
+
+    font-size: 1em;
+    line-height: 1.4em;
+    text-indent: 5%;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--font);
+}
+
+.text-page li{
+    font-size: 1em;
+    line-height: 1.4em;
+    font-family: "Merriweather Sans", sans-serif;
+    color: var(--font);
+
+}
+
+
+
+.text-page h3{
+    margin: 3% 2%;
+    font-size: 1.4em;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    color: var(--font);
+
+}
+
+
+.text-page a{
+    text-decoration: none;
+    color: $laranja;
+    text-decoration: underline;
+
+}

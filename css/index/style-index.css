@@ -57,7 +57,8 @@ li img, img, div:not(p, h1, h2, h3), li:not(h3) {
 }
 
 html {
-  width: 98%;
+  margin: 0 3.5%;
+  width: 93%;
 }
 
 li h3 {
@@ -266,7 +267,14 @@ input:checked + .slider:before {
   font-size: 1.0em;
 }
 .linguagem a:hover img {
-  transform: scale(1.2);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(1.1);
 }
 
 .logo-pedro {
@@ -519,7 +527,8 @@ ul {
   align-items: center;
 }
 
-li {
+.projects li {
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
   width: 14rem;
   border-style: solid;
@@ -541,7 +550,7 @@ li a {
   text-decoration: none;
 }
 
-li img {
+.projects li img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -562,6 +571,92 @@ li h3 {
 
 li:hover {
   transform: scale(1.2);
+  transition: ease-in-out 300ms;
+}
+
+.articles {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.articles h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: var(--font);
+}
+
+ul {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.articles li {
+  height: 19rem;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 30%;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding-bottom: 1.5%;
+  border-color: #ccc;
+  border-radius: 0rem 0rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 1%;
+  transition: ease-in-out 300ms;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.articles li img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.articles li div {
+  margin: 3% 6.5%;
+}
+
+li h3 {
+  text-align: initial;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5%;
+}
+
+li p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.0em;
+  margin-bottom: 0.5rem;
+  color: var(--font);
+  line-height: 1.1rem;
+}
+
+li:hover {
+  transform: scale(1.1);
   transition: ease-in-out 300ms;
 }
 
@@ -684,7 +779,7 @@ li:hover {
 }
 
 .curriculo-download div {
-  margin-top: 2%;
+  margin: 3% 0%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -751,8 +846,13 @@ li:hover {
     flex-direction: column;
   }
   .curriculo-geral .div-curriculo {
-    margin: 2% auto;
+    margin: 3% auto;
     width: 90%;
+  }
+}
+@media (max-width: 49rem) {
+  .articles li {
+    width: 40%;
   }
 }
 @media (max-width: 48.1rem) {
@@ -817,6 +917,12 @@ li:hover {
     margin-top: 6.5%;
     margin-bottom: 3%;
   }
+
+  .articles li {
+    height: 20rem;
+    width: 50%;
+    margin: 5% 0%;
+  }
 }
 @media (max-width: 38.25rem) {
   .title {
@@ -851,11 +957,11 @@ li:hover {
   }
 
   .info-title-text {
-    width: 80%;
+    width: 96%;
   }
 
   .info-title-text p {
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 
   .info-title-text img {
@@ -866,7 +972,7 @@ li:hover {
     width: 70%;
   }
 
-  .about-me h2, .contato h2, .curriculo h2, .projects h2 {
+  .about-me h2, .contato h2, .curriculo h2, .projects h2, .articles h2 {
     font-size: 2em;
   }
 
@@ -930,7 +1036,7 @@ li:hover {
     margin: 2% auto;
   }
 
-  li {
+  .projects li {
     padding: 6% 2%;
     min-width: 38%;
     margin: 3% 1.5%;
@@ -939,6 +1045,13 @@ li:hover {
 
   li img {
     margin-bottom: 1rem;
+  }
+
+  .articles h3 {
+    font-size: 1.1em;
+  }
+  .articles li {
+    width: 60%;
   }
 }
 @media (max-width: 28rem) {
@@ -980,22 +1093,22 @@ li:hover {
   }
 
   li h3 {
-    font-size: 1.35em;
+    font-size: 1.15em;
   }
 
   ul {
     width: 100%;
   }
 
-  li {
+  .projects li {
     width: 9rem;
     padding: 8% 1%;
     min-width: 38%;
     margin: 3% 1%;
     text-align: center;
   }
-  li img {
-    width: 5rem;
+  .projects li img {
+    width: 6rem;
   }
 
   .contato-grid img {

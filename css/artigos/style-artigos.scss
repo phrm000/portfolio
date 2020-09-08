@@ -1,0 +1,34 @@
+@import '../variaveis.scss';
+@import '../dark-mode.scss';
+
+
+html {
+    --bg-title: #F7C600;
+    --box-shadow: #E6E6E6;
+    background-color: var(--bg-all);
+    --bg-all: white;
+    --font: #1A1A1A;
+    --font-negative: #E6E6E6;
+    --bg-snack: #1E0540;
+    --box-shadow-snack: #160433;
+    --scroll: #ccc;
+    --bg-button: #1E0540;
+  }
+  
+  html[data-theme='dark'] {
+    --bg-title: #FF9C01;
+    --bg-all: #1E0540;
+    --box-shadow: #160433;
+    --font: #E6E6E6;
+    --font-negative: #1A1A1A;
+    --bg-snack: #F7C600;
+    --box-shadow-snack: #FF9C01;
+    --scroll: #160433;
+    --bg-button: #FF9C01;
+  }
+
+  
+@import 'layout/header.scss';
+@import 'layout/main.scss';
+@import 'layout/recomendacoes.scss';
+@import 'layout/media-query-projetos.scss';

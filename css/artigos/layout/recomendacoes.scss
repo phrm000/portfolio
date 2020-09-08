@@ -1,0 +1,89 @@
+
+.articles  .title{
+    margin: 3% 5%;
+    font-size: 1.4em;
+    font-family: "Francois One", sans-serif;
+    text-transform: uppercase;
+    color: var(--font);
+
+}
+.articles{
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+.articles h2{
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 3rem;
+    font-family: $subtitle;
+    text-transform: uppercase;
+    color: var(--font);
+    
+}
+
+.articles ul{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.articles li{
+    height:19rem;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    width: 30%;
+    border-style: solid;
+    border-width: 0.1rem;
+    padding-bottom:1.5%;
+    border-color: #ccc;
+    border-radius: 0rem 0rem 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 1%;
+    transition: ease-in-out 300ms;
+}
+
+.articles li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.articles li img{
+    @include unselect;
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    
+}
+
+.articles li div{
+    margin: 3% 6.5%;
+}
+.articles li h3{
+    text-align: initial;
+    font-family: $texto;
+    color: var(--font);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5%;
+}
+
+.articles li p{
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.0em;
+    margin-bottom: 0.5rem;
+    color: var(--font);
+    line-height: 1.1rem;
+}
+
+.articles li:hover{
+   transform: scale(1.05);
+   transition: ease-in-out 300ms;
+}

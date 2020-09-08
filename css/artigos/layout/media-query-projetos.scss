@@ -1,0 +1,153 @@
+@media (max-width:75rem){
+    html{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:62.5rem){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:56rem){
+    html{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:54rem){
+   
+}
+
+@media (max-width:49rem){
+    .articles li{
+        width: 40%;
+    }
+}
+@media (max-width:48.1rem){
+    
+    .linguagem {
+        width: 50%;
+    }
+
+    .articles li:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width:43.1rem){
+
+   
+
+    .logo-pedro {
+        width: 4.5rem;
+    }
+    .background-yellow h2 {
+        font-size: 2.2em;
+    }
+    
+    li h3 {
+        font-size: 1.5em;
+    }
+    
+
+
+}
+
+@media (max-width:40rem){
+
+    .articles li{
+        height: 20rem;
+        width: 50%;
+        margin: 5% 0%;
+    }
+
+}
+
+@media (max-width:38.25rem){
+  
+
+    .background-yellow {
+        padding: 0% 2% 2% 2%;
+        margin: 0 auto;
+        max-width: 92%;
+    }
+
+
+   
+  
+    .linguagem {
+        width: 70%;
+    }
+
+    .articles h2{
+        font-size: 2em;
+    }
+
+    li img {
+        width: 7rem;
+    }
+    li h3 {
+        font-size: 1.4em;
+    }
+
+    .articles  li {
+        width: 10rem;
+    }
+}
+
+@media (max-width:31rem){
+
+    .logo-pedro {
+        width: 4.0rem;
+    }
+
+    .background-yellow h2 {
+        font-size: 2em;
+    }
+
+   
+    li img {
+        margin-bottom: 1rem;
+    }
+
+    .articles{
+        h3{
+        font-size: 1.1em;
+        }
+        li{
+            width: 60%;
+        }
+    }
+}
+@media (max-width:28rem){
+
+   
+    .linguagem a span {
+        display: none;
+        text-align: center;
+        width: 60%;
+    }
+
+  
+    li h3 {
+        font-size: 1.15em;
+    }
+
+}
+
+@media (max-width:22rem){
+   
+    
+
+    .linguagem a{
+        flex-direction: column;
+        span{
+            display: none;
+
+        }
+    }
+
+}
+

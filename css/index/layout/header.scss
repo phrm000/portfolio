@@ -127,7 +127,8 @@ header{
     transition: 0.3s;
     font-size: 1.0em;
     img{
-        transform: scale(1.2);
+      @include unselect;
+        transform: scale(1.1);
     }
 }
 .logo-pedro{

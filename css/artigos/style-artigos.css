@@ -1,0 +1,520 @@
+html {
+  --bg-title: #F7C600;
+  --box-shadow: #E6E6E6;
+  background-color: var(--bg-all);
+  --bg-all: white;
+  --font: #1A1A1A;
+  --font-negative: #E6E6E6;
+  --bg-snack: #1E0540;
+  --box-shadow-snack: #160433;
+  --scroll: #ccc;
+  --bg-button: #1E0540;
+}
+
+html[data-theme='dark'] {
+  --bg-title: #FF9C01;
+  --bg-all: #1E0540;
+  --box-shadow: #160433;
+  --font: #E6E6E6;
+  --font-negative: #1A1A1A;
+  --bg-snack: #F7C600;
+  --box-shadow-snack: #FF9C01;
+  --scroll: #160433;
+  --bg-button: #FF9C01;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll);
+  border-radius: 1rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+li img, img, div:not(p, h1, h2, h3), li:not(h3) {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  --bg-title: #F7C600;
+  --box-shadow: #E6E6E6;
+  background-color: var(--bg-all);
+  --bg-all: white;
+  --font: #1A1A1A;
+  --font-negative: #E6E6E6;
+  --bg-snack: #1E0540;
+  --box-shadow-snack: #160433;
+  --scroll: #ccc;
+  --bg-button: #1E0540;
+}
+
+html[data-theme='dark'] {
+  --bg-title: #FF9C01;
+  --bg-all: #1E0540;
+  --box-shadow: #160433;
+  --font: #E6E6E6;
+  --font-negative: #1A1A1A;
+  --bg-snack: #F7C600;
+  --box-shadow-snack: #FF9C01;
+  --scroll: #160433;
+  --bg-button: #FF9C01;
+}
+
+html {
+  font-size: 20px;
+}
+
+header {
+  padding: 2%;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-title);
+  padding-bottom: 0.7rem;
+}
+
+.logo-pedro {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 3.5rem;
+  transition: ease-in-out 1.3s;
+}
+
+.logo-pedro:hover {
+  transform: rotate(-765deg);
+  transition: ease-in-out 1.3s;
+}
+
+.linguagem {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  transform: scale(0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  width: 8rem;
+  justify-content: space-around;
+}
+
+.switch {
+  display: inline-block;
+  height: 2rem;
+  position: relative;
+  width: 3.8rem;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: white;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0.0rem;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.1rem;
+  content: "";
+  height: 1.65rem;
+  width: 1.65rem;
+  left: 0.3rem;
+  position: absolute;
+  transition: .4s;
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+input:checked + .slider {
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: white;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.55rem);
+}
+
+.slider.round {
+  border-radius: 2rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.container img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 2.5rem;
+}
+
+.linguagem a {
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linguagem a span {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  font-family: "Merriweather Sans", sans-serif;
+  color: #1A1A1A;
+}
+
+.linguagem a img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: 0.3s;
+  width: 2.5rem;
+}
+
+.linguagem a:hover {
+  transition: 0.3s;
+  font-size: 1.0em;
+}
+.linguagem a:hover img {
+  transform: scale(1.2);
+}
+
+.htmlTransitionDark {
+  transition: background-color 750ms, color 750ms, box-shadow 750ms;
+}
+
+.article-img {
+  width: 100%;
+}
+
+h1 {
+  margin: 2% 2% 1% 2%;
+  font-size: 2.8em;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: var(--font);
+}
+
+h2 {
+  margin-left: 2%;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+}
+
+.header-title span {
+  display: block;
+  margin-right: 2%;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+  text-align: end;
+}
+
+b {
+  color: #FF9C01;
+}
+
+.text-page {
+  width: 90%;
+  margin: 5%;
+}
+
+.text-page ul {
+  width: 90%;
+  margin: 2% 5%;
+}
+
+.text-page p {
+  font-size: 1em;
+  line-height: 1.4em;
+  text-indent: 5%;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+}
+
+.text-page li {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+}
+
+.text-page h3 {
+  margin: 3% 2%;
+  font-size: 1.4em;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: var(--font);
+}
+
+.text-page a {
+  text-decoration: none;
+  color: #FF9C01;
+  text-decoration: underline;
+}
+
+.articles .title {
+  margin: 3% 5%;
+  font-size: 1.4em;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: var(--font);
+}
+
+.articles {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.articles h2 {
+  margin-bottom: 4%;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Francois One", sans-serif;
+  text-transform: uppercase;
+  color: var(--font);
+}
+
+.articles ul {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.articles li {
+  height: 19rem;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  width: 30%;
+  border-style: solid;
+  border-width: 0.1rem;
+  padding-bottom: 1.5%;
+  border-color: #ccc;
+  border-radius: 0rem 0rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% 1%;
+  transition: ease-in-out 300ms;
+}
+
+.articles li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.articles li img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.articles li div {
+  margin: 3% 6.5%;
+}
+
+.articles li h3 {
+  text-align: initial;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 5%;
+}
+
+.articles li p {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 1.0em;
+  margin-bottom: 0.5rem;
+  color: var(--font);
+  line-height: 1.1rem;
+}
+
+.articles li:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 300ms;
+}
+
+@media (max-width: 75rem) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (max-width: 62.5rem) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 56rem) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 49rem) {
+  .articles li {
+    width: 40%;
+  }
+}
+@media (max-width: 48.1rem) {
+  .linguagem {
+    width: 50%;
+  }
+
+  .articles li:hover {
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 43.1rem) {
+  .logo-pedro {
+    width: 4.5rem;
+  }
+
+  .background-yellow h2 {
+    font-size: 2.2em;
+  }
+
+  li h3 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 40rem) {
+  .articles li {
+    height: 20rem;
+    width: 50%;
+    margin: 5% 0%;
+  }
+}
+@media (max-width: 38.25rem) {
+  .background-yellow {
+    padding: 0% 2% 2% 2%;
+    margin: 0 auto;
+    max-width: 92%;
+  }
+
+  .linguagem {
+    width: 70%;
+  }
+
+  .articles h2 {
+    font-size: 2em;
+  }
+
+  li img {
+    width: 7rem;
+  }
+
+  li h3 {
+    font-size: 1.4em;
+  }
+
+  .articles li {
+    width: 10rem;
+  }
+}
+@media (max-width: 31rem) {
+  .logo-pedro {
+    width: 4.0rem;
+  }
+
+  .background-yellow h2 {
+    font-size: 2em;
+  }
+
+  li img {
+    margin-bottom: 1rem;
+  }
+
+  .articles h3 {
+    font-size: 1.1em;
+  }
+  .articles li {
+    width: 60%;
+  }
+}
+@media (max-width: 28rem) {
+  .linguagem a span {
+    display: none;
+    text-align: center;
+    width: 60%;
+  }
+
+  li h3 {
+    font-size: 1.15em;
+  }
+}
+@media (max-width: 22rem) {
+  .linguagem a {
+    flex-direction: column;
+  }
+  .linguagem a span {
+    display: none;
+  }
+}
