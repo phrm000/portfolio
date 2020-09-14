@@ -1,0 +1,29 @@
+footer{
+    
+    margin: 1% 0%;
+    box-shadow: 0rem -0.3rem var(--box-shadow);
+    -moz-box-shadow: 0rem -0.3rem var(--box-shadow);
+    -webkit-box-shadow: 0rem -0.3rem var(--box-shadow);
+    -o-box-shadow: 0rem -0.3rem var(--box-shadow);
+    padding: 2% 0%;
+    p,li{
+        color: var(--font);
+        margin-left: 2rem;
+        font-size: 1.1em;
+        line-height: 1.2em;
+        font-family: "Merriweather Sans", sans-serif;
+    }
+}
+
+.logo-pedro-footer{
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    width: 5rem;
+    opacity: 70%;
+}
+
+.logo-footer{
+    align-items: center;
+    display: flex;
+   
+    }
