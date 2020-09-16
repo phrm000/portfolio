@@ -309,6 +309,17 @@ b {
   text-decoration: underline;
 }
 
+.text-page img {
+  margin: 2% 20%;
+  width: 60%;
+}
+
+.citacao {
+  margin: 2% 6%;
+  width: 88%;
+  font-style: italic;
+}
+
 .articles .title {
   margin: 3% 5%;
   font-size: 1.4em;
