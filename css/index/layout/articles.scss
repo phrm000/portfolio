@@ -45,6 +45,14 @@ li a{
     text-decoration: none;
     
 }
+.articles .subtitle{
+    width: 80%;
+    margin: 0% 10%;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    font-family: $texto;
+    color: var(--font);
+}
 
 .articles li img{
     @include unselect;

@@ -621,6 +621,15 @@ li a {
   text-decoration: none;
 }
 
+.articles .subtitle {
+  width: 80%;
+  margin: 0% 10%;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-family: "Merriweather Sans", sans-serif;
+  color: var(--font);
+}
+
 .articles li img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
