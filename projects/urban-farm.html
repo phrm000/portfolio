@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="htmlFile">
+<html lang="en-US" class="htmlFile">
 
     <head>
-        
         <meta charset="UTF-8">
-
+        
         <meta property="og:locale" content="pt_BR" />
 
         <meta property="og:title" content="Projects - Pedro Morais" />
-        <meta property="og:site_name" content="Portfólio - Pedro Morais">
-        <meta property="og:description" content="Olá, meu nome é Pedro morais, tenho 19 anos, sou estudante e voluntário na área de Design, veja um pouco do meu trabalho nesse site ;)">
+        <meta property="og:site_name" content="Portfolio - Pedro Morais">
+        <meta property="og:description" content="Hello, my name is Pedro Morais, I am a 19 years brazilian design student and volunteer, check some of my work in this website ;)">
 
         <meta property="og:image" content="../img/logoPedroOG.svg">
         <meta property="og:image:type" content="image/svg">
@@ -17,8 +16,9 @@
         <meta property="og:image:height" content="800"> 
 
         <meta property="og:type" content="website">
+        
 
-        <title>Portfólio - Pedro Morais</title>
+        <title>Portfolio - Pedro Morais</title>
         <link rel="icon" type="png" sizes="96x96" href="../img/logoIcon.png">
 
 
@@ -35,7 +35,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link  rel="stylesheet" href="../css/video-js.css">
+        <link  rel="stylesheet" href="../css/base/video-js.css">
         <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 
     </head>
@@ -43,7 +43,7 @@
         <section class="non-modal">
             <header>
 
-                <a href="../index.html"><img src="../img/logoPedro.svg" class="logo-pedro"></a>
+                <a href="../en.index.html"><img src="../img/logoPedro.svg" class="logo-pedro"></a>
 
                 <div class="linguagem" >
 
@@ -55,65 +55,66 @@
                         <img src="../img/modoNoturno.svg">
                     </div>
 
-                    <a href="../projects/animations.html" style="text-decoration: none;">
-                        <span >Change to English</span>
-                        <img src="../img/euaFlag.svg">
+                    <a href="../projetos/fazenda-urbana.html" style="text-decoration: none;">
+                        <span >Ir para o português</span>
+                        <img src="../img/brFlag.svg">
                     </a>
                 </div>
             </header>
+       
 
         <section role="main" class="display">
 
             <div class="next-page">
-                <a href="cartoes-de-visita.html"><img src="../img/previous.svg"></a>
-                <h1>Animações flat</h1>
-                <a href="fazenda-urbana.html"><img src="../img/next.svg"></a>
+                <a href="animations.html"><img src="../img/previous.svg"></a>
+                <h1>Management System FUC</h1>
+                <a href="movimento-online.html"><img src="../img/next.svg"></a>
             </div>
 
             
 
             <div class="img-text-page" >
-                <img class="img-page" src="../img/animacao.png">
+                <img class="img-page" src="../img/fazendaPage.png" id="fazendaImg">
 
                 <div class="div-between"></div>
 
                 <div class="text-page">
-                    <h2>Informação clara</h2>
+                    <h2>From soil to digital</h2>
                     <p>
-                        &ensp;&ensp;&ensp;Desenhos projetados em Adobe Illustrator e animados em Adobe After Effects para projetos pessoais voltados à educação a distância e apresentação de propostas.
+                        &ensp;&ensp;&ensp; The <a href="https://www.curitiba.pr.gov.br/noticias/fazenda-urbana-e-inaugurada-e-tera-cursos-de-agricultura-urbana-apos-a-pandemia/56403" target="blank">Urban Farm of Cajuru</a>is one of the first and the largest Urban Farm in Brazil, with more than 4 thousand m² and with more than 120 mapped beds where 60 crops are grown.
                     </p>
 
                     <p>
-                        &ensp;&ensp;&ensp;Foco em desenhos de personagens flat detalhados, organizados em camadas para a fácil utilização destes em softwares como Adobe Character Animator, Adobe After Effects e Adobe Premiere Pro. 
+                        &ensp;&ensp;&ensp; The academic project for the implementation of a plantation management system at Fazenda Urbana do Cajuru, involves several departments of UTFPR, with the objective of bringing this entire "ecosystem" to online management.
+                    </p>
+                    <p>
+                        &ensp;&ensp;&ensp; In this process, I played in all the roles of the team, from mapping the area in AutoDesk software to user research, projecting wireframes made of paper for high-fidelity prototypes in Figma.
                     </p>
 
-                    <h3>Vídeo demonstrativo</h3>
-                    <video
-                        id="my-video"
-                        class="video-js propriedades-video"
-                        controls preload="auto"
-                        width="400px"
-                        height="auto"
-                        data-setup="{}"
-                        >
-                    <source src="../img/Terrafinal.mp4" type="video/mp4" /></video>
 
-                    <h3>Softwares utilizados</h3>
-                    <ul class="softwares-text">
-                        <li>Adobe Ai</li>
-                        <li>Adobe Ae</li>                      
+                    <h3>Some of my works</h3>
+                    <ul class="works-display">
+                        <li><img src="../img/fazenda1.png"></li>
+                        <li><img src="../img/fazenda2.png"></li>
+                        <li><img src="../img/fazenda3.png"></li>
+                        <li><img src="../img/fazenda4.png"></li>
                     </ul>
 
-
-
-                   
+                     <h3>Used softwares</h3>
+                    <ul class="softwares-text">
+                        <li>PostGreSQL</li>
+                        <li>Figma</li>
+                        <li>Miro</li>
+                        <li>Auto CAD</li>
+                        <li>Civil 3D</li>
+                        
+                    </ul>
                     
                 </div>
             </div>
 
         </section>
     </section>
-
         <div id="lightBoxModal" class="ModalLB">
            
             <div class="modal-content">
@@ -131,9 +132,11 @@
             
             </div>
 
+
+        </div>
+
     </body>
 </html>
-<script src="https://vjs.zencdn.net/7.7.6/video.js"></script>
 <script src="../js/lightbox.js"></script>
 <script src="../js/dark-mode.js"></script>
 <script src="../js/image-change.js"></script>
